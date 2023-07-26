@@ -4,6 +4,7 @@ import img3 from "../assets/icons/Frame-3.png";
 import img4 from "../assets/icons/Frame-4.png";
 import img5 from "../assets/icons/Frame-5.png";
 import img6 from "../assets/icons/Frame-6.png";
+import { NavLink } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -24,19 +25,23 @@ const OurServices = () => {
       </div>
 
       <div className="grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-          <div>
-            <img className="service-icons w-32" src={img1} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              Mobile Application
-            </h1>
-            <p className="text-white font-[Poppins]">
-              Seamlessly connect with your audience through our cutting-edge
-              mobile app solutions
-            </p>
-          </div>
+        <div className=" opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+          <NavLink to="/servicepage">
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img1} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  Mobile Application
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  Seamlessly connect with your audience through our cutting-edge
+                  mobile app solutions
+                </p>
+              </div>
+            </div>
+          </NavLink>
         </div>
 
         <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
@@ -78,8 +83,8 @@ const OurServices = () => {
               2D / 3D Animation
             </h1>
             <p className="text-white font-[Poppins]">
-              Bring your imagination to life with our exceptional 2D / 3D animation
-              services
+              Bring your imagination to life with our exceptional 2D / 3D
+              animation services
             </p>
           </div>
         </div>
