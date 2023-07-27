@@ -171,10 +171,7 @@ const DigitalMarketing = () => {
 
        
 
-        
-           
-          </div>
-
+         
         </div>
 
         <Footer />
