@@ -11,8 +11,12 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import PricingCard from "../Components/PricingCard";
 import EcommerceCard from "../Components/Ecommerce";
+import { useState, useEffect } from "react";
+import GetQuote from "../Components/GetQuote";
 
 const Ecommerce = () => {
+
+  const [openModal, setOpenModal] = useState();
   return (
     <div>
       <Navbar />
@@ -33,7 +37,11 @@ const Ecommerce = () => {
               sales and maximize your digital growth.
             </p>
 
-            <button className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -180,12 +188,12 @@ const Ecommerce = () => {
                 Our Work
               </h1>
 
-              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+             <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
                 <EcommerceCard />
               </div>
             </div>
 
-            <div className="my-40">
+             <div id="pricing" className="my-40">
             <PricingCard
             firstTitle="Startup E-Commerce Package"
             secondTitle="Professional E-Commerce Package"
@@ -242,6 +250,9 @@ const Ecommerce = () => {
 
         <Footer />
       </div>
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

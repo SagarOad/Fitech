@@ -2,15 +2,20 @@ import React from "react";
 
 import logo from "../assets/newLogo.png";
 import GetQuote from "./GetQuote";
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [openModal, setOpenModal] = useState();
   return (
     <div>
       <nav class="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
         <div class="flex flex-wrap items-center justify-between mx-auto">
+          <NavLink to="/">
           <a href="#main-banner" class="flex items-center cursor-pointer">
             <img src={logo} className="md:w-[138px] w-[120px]" />
           </a>
+          </NavLink>
           <div class="flex md:order-2 md:flex-row flex-col-reverse">
             <button
               onClick={() => {
@@ -49,13 +54,13 @@ const Navbar = () => {
           >
             <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
+                <NavLink to="/">
                 <a
-                  href="#services"
                   class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
-                  aria-current="page"
                 >
-                  Services
+                  Home
                 </a>
+                </NavLink>
               </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                 <a
@@ -73,18 +78,14 @@ const Navbar = () => {
                   Prices
                 </a>
               </li>
-              <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                <a
-                  href="#contact"
-                  class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
-                >
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

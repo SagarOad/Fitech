@@ -11,8 +11,13 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import PricingCard from "../Components/PricingCard";
 import MobileAppCard from "../Components/MobileApp";
+import { useState, useEffect } from "react";
+import GetQuote from "../Components/GetQuote";
 
 const MobileApp = () => {
+
+const [openModal, setOpenModal] = useState();
+
   return (
     <div>
       <Navbar />
@@ -35,7 +40,11 @@ const MobileApp = () => {
               mobile applications over time.
             </p>
 
-            <button className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -185,12 +194,12 @@ const MobileApp = () => {
                 Our Work
               </h1>
 
-              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+              <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
                 <MobileAppCard />
               </div>
             </div>
 
-            <div className="my-40">
+            <div id="pricing" className="my-40">
               <PricingCard
                 firstTitle="Basic Package"
                 secondTitle="Premimum Package"
@@ -291,6 +300,10 @@ const MobileApp = () => {
 
         <Footer />
       </div>
+
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

@@ -13,8 +13,12 @@ import { useState } from "react";
 
 import WebDesignCard from "../Components/WebDesign";
 import PricingCard from "../Components/PricingCard";
+import GetQuote from "../Components/GetQuote";
 
 const GraphicsDesign = () => {
+  const [openModal, setOpenModal] = useState();
+
+
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
@@ -41,7 +45,11 @@ const GraphicsDesign = () => {
               vision to life and leaves a lasting impression on your audience.
             </p>
 
-            <button className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -185,12 +193,12 @@ const GraphicsDesign = () => {
                 Our Work
               </h1>
 
-              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+             <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
                 <WebDesignCard />
               </div>
             </div>
 
-            <div className="my-40">
+             <div id="pricing" className="my-40">
               <div className="flex flex-wrap md:flex-auto my-12 justify-center px-4 md:px-24 mx-auto">
                 <button
                   className={
@@ -360,6 +368,9 @@ const GraphicsDesign = () => {
 
         <Footer />
       </div>
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

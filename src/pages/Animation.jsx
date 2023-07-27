@@ -12,7 +12,13 @@ import Navbar from "../Components/Navbar";
 import PricingCard from "../Components/PricingCard";
 import AnimationCard from "../Components/Animation";
 
+import { useState, useEffect } from "react";
+import GetQuote from "../Components/GetQuote";
+
 const Animation = () => {
+  const [openModal, setOpenModal] = useState();
+
+
   return (
     <div>
       <Navbar />
@@ -31,7 +37,11 @@ const Animation = () => {
               expertise.
             </p>
 
-            <button className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -177,12 +187,12 @@ const Animation = () => {
                 Our Work
               </h1>
 
-              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+             <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
                 <AnimationCard />
               </div>
             </div>
 
-            <div className="my-40">
+             <div id="pricing" className="my-40">
             <PricingCard
             firstTitle="Silver Plan"
             secondTitle="Gold Plan"
@@ -232,6 +242,9 @@ const Animation = () => {
 
         <Footer />
       </div>
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

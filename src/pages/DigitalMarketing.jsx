@@ -12,8 +12,14 @@ import Navbar from "../Components/Navbar";
 
 import PricingCard from "../Components/PricingCard";
 
+import { useState, useEffect } from "react";
+import GetQuote from "../Components/GetQuote";
+
 
 const DigitalMarketing = () => {
+
+  const [openModal, setOpenModal] = useState();
+
   return (
     <div>
       <Navbar />
@@ -31,7 +37,11 @@ const DigitalMarketing = () => {
             Elevate your online presence and reach new heights with our result-driven Digital Marketing strategies. From creating engaging campaigns to targeted advertising, we help you connect with your audience and achieve your marketing goals.
             </p>
 
-            <button className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -162,7 +172,7 @@ const DigitalMarketing = () => {
        
 
           <div>
-            <div className="my-40">
+             <div id="pricing" className="my-40">
             <PricingCard
             firstTitle="Basic Package"
             secondTitle="Premimum Package"
@@ -211,6 +221,9 @@ const DigitalMarketing = () => {
 
         <Footer />
       </div>
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };
