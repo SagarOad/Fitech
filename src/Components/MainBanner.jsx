@@ -25,7 +25,7 @@ const MainBanner = () => {
   }, [index]);
 
   return (
-    <div id="main-banner" className="">
+    <div id="main-banner" className=" mb-20">
       <nav class="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
         <div class="flex flex-wrap items-center justify-between mx-auto">
           <a href="#main-banner" class="flex items-center cursor-pointer">

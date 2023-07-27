@@ -223,7 +223,7 @@ const Pricing = () => {
         </div>
 
         <div
-          className={toggleState === 4 ? "content  active-content" : "content"}
+          className={toggleState === 4 ? "content active-content" : "content"}
           onClick={() => toggleTab(4)}
         >
           <PricingCard
@@ -269,7 +269,7 @@ const Pricing = () => {
         </div>
 
         <div
-          className={toggleState === 5 ? "content  active-content" : "content"}
+          className={toggleState === 5 ? "content active-content" : "content"}
           onClick={() => toggleTab(5)}
         >
           <PricingCard
@@ -318,7 +318,7 @@ const Pricing = () => {
         </div>
 
         <div
-          className={toggleState === 6 ? "content  active-content" : "content"}
+          className={toggleState === 6 ? "content active-content" : "content"}
           onClick={() => toggleTab(6)}
         >
           <PricingCard
@@ -364,7 +364,7 @@ const Pricing = () => {
         </div>
 
         <div
-          className={toggleState === 7 ? "content  active-content" : "content"}
+          className={toggleState === 7 ? "content active-content" : "content"}
           onClick={() => toggleTab(7)}
         >
           <PricingCard

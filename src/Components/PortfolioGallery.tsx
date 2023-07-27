@@ -1,14 +1,10 @@
-import img1 from "../assets/updated-portfolio/rts.png"
-import img2 from "../assets/updated-portfolio/grandeMaison.png"
-import img3 from "../assets/updated-portfolio/fgc.png"
-import img4 from "../assets/updated-portfolio/fprod.png"
+import img1 from "../assets/updated-portfolio/Web/Web 1.png"
+import img2 from "../assets/updated-portfolio/Web/Web 3.png"
+import img3 from "../assets/updated-portfolio/Web/screencapture-aurorashoeco-2023-07-27-16_44_06.png"
+import img4 from "../assets/updated-portfolio/Web/screencapture-hanselmannpottery-2023-07-27-16_44_32.png"
 // import img5 from "../assets/New folder/7.webp"
-import img6 from "../assets/New folder/alkauser-charity.jpg"
-import img7 from "../assets/New folder/home-sense.jpg"
-import img8 from "../assets/New folder/islam-marriage.jpg"
-import img9 from "../assets/New folder/mongo-tech.jpg"
-import img10 from "../assets/New folder/perky-parrot.jpg"
-import img11 from "../assets/New folder/world-wide-group.jpg"
+import img6 from "../assets/updated-portfolio/Web/screencapture-mayoclinic-org-2023-07-27-16_42_58.png"
+import img7 from "../assets//updated-portfolio/Web/screencapture-textore-net-2023-07-27-16_41_55.png"
 
 
  
@@ -24,7 +20,7 @@ const PortfolioGallery = () => {
             <div className="-m-1 flex flex-wrap md:-m-2">
               <div className="flex w-1/2 flex-wrap">
                 <div className="grayscale hover:grayscale-0 ease-in duration-300 w-1/2 p-1 md:p-2">
-                  <a href="https://rayyanthesuperhero.com/" target="_blank">
+                  <a href="https://bravogroup.us/" target="_blank">
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center "
@@ -33,7 +29,7 @@ const PortfolioGallery = () => {
                   </a>
                 </div>
                 <div className="grayscale hover:grayscale-0 ease-in duration-300 w-1/2 p-1 md:p-2">
-                <a href="http://grandemaison.wirelesswavestx.com/" target="_blank">
+                <a href="https://pi.paytm.com/" target="_blank">
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center"
@@ -42,7 +38,7 @@ const PortfolioGallery = () => {
                   </a>
                 </div>
                 <div className="w-full p-1 md:p-2 grayscale hover:grayscale-0 ease-in duration-300">
-                  <a href="https://famegroupofcompanies.com/" target="_blank">
+                  <a href="https://www.aurorashoeco.com/" target="_blank">
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center"
@@ -55,7 +51,7 @@ const PortfolioGallery = () => {
 
               <div className="flex w-1/2 flex-wrap">
                 <div className="w-full p-1 md:p-2 grayscale hover:grayscale-0 ease-in duration-300">
-                <a href="https://fame-production.com/" target="_blank">
+                <a href="https://hanselmannpottery.com/" target="_blank">
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center"
@@ -72,7 +68,7 @@ const PortfolioGallery = () => {
                 </div> */}
                 <div className="grayscale hover:grayscale-0 ease-in duration-300 p-1 md:p-2">
                 
-                <a href="http://alkousarcharity.com/" target="_blank">
+                <a href="https://www.mayoclinic.org/" target="_blank">
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center"
@@ -91,47 +87,6 @@ const PortfolioGallery = () => {
                   </a>
                 </div>
 
-                <div className="grayscale hover:grayscale-0 ease-in duration-300 w-1/2 p-1 md:p-2">
-                <a href="https://islamarriage.com/" target="_blank">
-                  <img
-                    alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center "
-                    src={img8}
-                  />
-                  </a>
-                </div>
-
-
-                <div className="flex w-1/2 flex-wrap">
-                <div className="grayscale hover:grayscale-0 ease-in duration-300 w-1/2 p-1 md:p-2">
-                  <a href="https://mongotech.net/" target="_blank">
-                  <img
-                    alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center "
-                    src={img9}
-                  />
-                  </a>
-                </div>
-                <div className="grayscale hover:grayscale-0 ease-in duration-300 w-1/2  p-1 md:p-2">
-                
-                <a href="https://perkyparrotsnft.com/" target="_blank">
-                  <img
-                    alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center"
-                    src={img10}
-                  />
-                  </a>
-                </div>
-                <div className="w-full p-1 md:p-2 grayscale hover:grayscale-0 ease-in duration-300">
-                <a href="https://wwg.com.pk/" target="_blank">
-                  <img
-                    alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center"
-                    src={img11}
-                  />
-                  </a>
-                </div>
-              </div>
                 
             </div>
           </div>
