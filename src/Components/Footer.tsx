@@ -5,6 +5,8 @@ import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="">
+            <hr className="w-full bg-white opacity-30 h-[1px]" />
+
       <div className="py-12 px-8 md:px-24 mx-auto">
         <div className="block md:flex justify-between items-center">
           <div>

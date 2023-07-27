@@ -14,7 +14,7 @@ import ProjectTabs from "../Components/ProjectTabs";
 
 const Home = () => {
   return (
-     <div className="main-bg  leading-normal tracking-normal  text-indigo-400 bg-cover bg-fixed">
+     <div className="main-bg  leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
       <MainBanner />
       <OurServices2 />
       <Features />
@@ -24,7 +24,7 @@ const Home = () => {
       <ProjectTabs />
       <ContactSection />
       <Pricing />
-      <TeamSlider />
+      {/* <TeamSlider /> */}
       <Footer />
     </div>
   )

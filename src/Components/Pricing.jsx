@@ -8,9 +8,6 @@ const Pricing = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
-  // const toggleTab = () => {
-  //   console.log("Hello World");
-  // };
 
   return (
     <div id="pricing" className="px-8 pb-16 py-12 md:px-24 mx-auto">
@@ -93,14 +90,6 @@ const Pricing = () => {
           className={toggleState === 1 ? "content  active-content" : "content"}
           onClick={() => toggleTab(1)}
         >
-          {/* {Data.map((data) => (
-            <Pricing
-              key={data.id}
-              firstTitle={data.WebDesignFirstTitle}
-              secondTitle={data.WebDesignSecondTitle}
-              thirdTitle={data.WebDesignThirdTitle}
-            />
-          ))} */}
           <PricingCard
             firstTitle="Basic Package"
             secondTitle="Business Package"

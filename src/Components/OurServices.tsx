@@ -44,7 +44,11 @@ const OurServices = () => {
           </NavLink>
         </div>
 
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+
+
+        <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+        <NavLink to="/ecommerce">
+         <div className="flex">
           <div>
             <img className="service-icons w-32" src={img2} />
           </div>
@@ -57,9 +61,13 @@ const OurServices = () => {
               reach the global{" "}
             </p>
           </div>
+          </div>
+          </NavLink>
         </div>
 
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
+        <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
+         <NavLink to="/digitalmarketing">
+          <div className="flex">
           <div>
             <img className="service-icons w-32" src={img3} />
           </div>
@@ -72,9 +80,13 @@ const OurServices = () => {
               level
             </p>
           </div>
+          </div>
+          </NavLink>
         </div>
 
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+        <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+        <NavLink to="animation">
+        <div className="flex">
           <div>
             <img className="service-icons w-32" src={img4} />
           </div>
@@ -87,9 +99,13 @@ const OurServices = () => {
               animation services
             </p>
           </div>
+          </div>
+          </NavLink>
         </div>
 
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+        <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+          <NavLink to="/graphicsdesign">
+          <div className="flex">
           <div>
             <img className="service-icons w-32" src={img5} />
           </div>
@@ -102,9 +118,13 @@ const OurServices = () => {
               Mobile and Web{" "}
             </p>
           </div>
+          </div>
+          </NavLink>
         </div>
 
-        <div className="flex opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+        <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+         <NavLink to="/softwaredevelopment">
+          <div className="flex">
           <div>
             <img className="service-icons w-32" src={img6} />
           </div>
@@ -117,7 +137,12 @@ const OurServices = () => {
               solutions
             </p>
           </div>
+          </div>
+          </NavLink>
         </div>
+
+
+        
       </div>
     </div>
   );
