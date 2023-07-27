@@ -18,6 +18,7 @@ import GetQuote from "../Components/GetQuote";
 const SoftwareDevelopment = () => {
   const [openModal, setOpenModal] = useState();
 
+
   return (
     <div>
       <Navbar />
@@ -38,12 +39,11 @@ const SoftwareDevelopment = () => {
               productivity, and drive business growth.
             </p>
 
-            <button
-              onClick={() => {
-                setOpenModal(true);
-              }}
-              className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3"
-            >
+            <button 
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
               Get a Quote
             </button>
           </div>
@@ -181,36 +181,13 @@ const SoftwareDevelopment = () => {
             </div>
           </div>
 
+         
+
           <div>
-             <div id="pricing" className="my-40">
-              <PricingCard
-                firstTitle="Basic Plan"
-                secondTitle="Premimium Plan"
-                thirdTitle="Customized Plan"
-                firstPrice="$3500"
-                firstDiscount="$4500"
-                secondPrice="$5000"
-                seoncdDiscount="$6000"
-                WebDesignMsg1="All Type of Online Portals eg: Dating Portal, Job Portal, Social Network etc"
-                WebDesignMsg2="Complete Deployment"
-                WebDesignMsg3="100% Custom Designs - No Templates"
-                WebDesignMsg4="Value-Added Services"
-                WebDesignMsg5="Discounted Price"
-                WebDesignMsg6="Dedicated Account Manager"
-                WebDesignMsg7="Satisfaction Guarantee"
-                WebDesignMsg8="30-Days Moneyback Guarantee"
-                WebDesignMsg9="All Type of Online Portals"
-                WebDesignMsg10="12 Unique Logo Concepts"
-                WebDesignMsg11="Unlimited Revisions"
-                WebDesignMsg12="100% Ownership Right"
-                WebDesignMsg13="Complete Deployment"
-                WebDesignMsg14="Logo Design"
-                WebDesignMsg15="100% Custom Designs - No Templates"
-                WebDesignMsg16="Stationery Design (Business Card, Letterhead, Envelope)"
-                WebDesignMsg17="Comprehensive Web Portal (Any One Of Your Choice*)"
-                WebDesignMsg18="Customized planning according to your needs"
-              />
-            </div>
+          
+
+            
+           
           </div>
         </div>
 

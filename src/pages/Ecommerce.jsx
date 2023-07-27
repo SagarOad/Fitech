@@ -193,56 +193,7 @@ const Ecommerce = () => {
               </div>
             </div>
 
-             <div id="pricing" className="my-40">
-            <PricingCard
-            firstTitle="Startup E-Commerce Package"
-            secondTitle="Professional E-Commerce Package"
-            thirdTitle="Elite E-Commerce Package"
-            firstPrice="$999"
-            firstDiscount="$1499"
-            secondPrice="$1999"
-            seoncdDiscount="$2499"
-            thirdPrice="$4999"
-            thirdDiscount="$3999"     
-            
-            WebDesignMsg1="Customized Design"
-            WebDesignMsg2="Up-To 100 Products"
-            WebDesignMsg3="Content Management System (CMS)"
-            WebDesignMsg4="Mini Shopping Cart Integration"
-            WebDesignMsg5="Payment Module Integration"
-            WebDesignMsg6="Easy Product Search"
-            WebDesignMsg7="Dedicated Designer & Developer"
-            WebDesignMsg8="Unlimited Revisions"
-
-            WebDesignMsg9="Customized Design"
-            WebDesignMsg10="Up-To 500 Products"
-            WebDesignMsg11="Content Management System (CMS)"
-            WebDesignMsg12="Full Shopping Cart Integration"
-            WebDesignMsg13="Payment Module Integration"
-            WebDesignMsg14="Easy Product Search"
-            WebDesignMsg15="Product Reviews"
-            WebDesignMsg16="5 Promotional Banners"
-            WebDesignMsg17="Team Of Expert Designers & Developers"
-            WebDesignMsg18="Unlimited Revisions"
-
-            WebDesignMsg19="Unlimited Pages Website With Unique Design"
-            WebDesignMsg20="5 Custom Logo Design"
-            WebDesignMsg21="CMS / Backend Adminstrative System"
-            WebDesignMsg22="Unlimited Products With Unlimited Categories"
-            WebDesignMsg23="FREE Unlimited Revisions"
-            WebDesignMsg24="Custom Shopping Cart Integration"
-            WebDesignMsg25="Multiple Payment Module Integration"
-            WebDesignMsg26="Multiple Shipping Module Integration"
-            WebDesignMsg27="Product Ratings & Reviews"
-            WebDesignMsg28="Sales & Inventory Management System"
-            WebDesignMsg29="Multiple Currency Support"
-            WebDesignMsg30="Customer Login Area (Sign-Up & Sign-In)"
-            WebDesignMsg31="Mobile Responsive"
-            WebDesignMsg32="Social Media Designs (Facebook, Twitter, Youtube)"
-            WebDesignMsg33="Dedicated Project Manager"
-            WebDesignMsg34="News Letter Subscription"
-          />
-            </div>
+             
            
           </div>
 

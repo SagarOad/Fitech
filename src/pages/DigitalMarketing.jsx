@@ -171,49 +171,7 @@ const DigitalMarketing = () => {
 
        
 
-          <div>
-             <div id="pricing" className="my-40">
-            <PricingCard
-            firstTitle="Basic Package"
-            secondTitle="Premimum Package"
-            thirdTitle="Ennterprice Package"
-            firstPrice="$249"
-            firstDiscount="$499"
-            secondPrice="$399"
-            seoncdDiscount="$799"
-            thirdPrice="$1599"
-            thirdDiscount="$799"
-
-            WebDesignMsg1="2 Platforms"
-            WebDesignMsg2="16 Posts Per Month"
-            WebDesignMsg3="Analytics"
-            WebDesignMsg4="Basic Ad Campaigns"
-            WebDesignMsg5="Post Designs"
-            WebDesignMsg6="Account Manager"
-            WebDesignMsg7="Manage Campaign"
-            WebDesignMsg8="Logo And Cover"
-
-            WebDesignMsg9="3 Platforms"
-            WebDesignMsg10="20 Posts Per Month"
-            WebDesignMsg11="Analytics"
-            WebDesignMsg12="Basic + Video Ads"
-            WebDesignMsg13="Post Designs"
-            WebDesignMsg14="Account Manager"
-            WebDesignMsg15="Manage Campaign"
-            WebDesignMsg16="Logo And Cover"
-
-            WebDesignMsg17="4 Platforms"
-            WebDesignMsg18="30 Posts Per Month"
-            WebDesignMsg19="Analytics"
-            WebDesignMsg20="Basic + Video Posts + Ads"
-            WebDesignMsg21="Account Manager"
-            WebDesignMsg22="Manage Campaign"
-            WebDesignMsg23="Logo And Cover"
-            WebDesignMsg24="Weekly Reports"
-            WebDesignMsg25="Customer Support Services"
-            WebDesignMsg26="Page Chat Support"
-          />
-            </div>
+        
            
           </div>
 

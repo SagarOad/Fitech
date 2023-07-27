@@ -199,45 +199,7 @@ const [openModal, setOpenModal] = useState();
               </div>
             </div>
 
-            <div id="pricing" className="my-40">
-              <PricingCard
-                firstTitle="Basic Package"
-                secondTitle="Premimum Package"
-                thirdTitle="Ennterprice Package"
-                firstPrice="$6000"
-                firstDiscount="$4500"
-                secondPrice="$12000"
-                seoncdDiscount="$8000"
-                thirdPrice="$18000"
-                thirdDiscount="$25000"
-                WebDesignMsg1="Custom App Deevlopment (IOS/Android)"
-                WebDesignMsg2="User Interface (UI) Design"
-                WebDesignMsg3="User Experience (UX) Design"
-                WebDesignMsg4="Push Notifications Integration"
-                WebDesignMsg5="App Store Submission Assistance"
-                WebDesignMsg6="Basic App Performance Optimization"
-                WebDesignMsg7="Standard Security Measure"
-                WebDesignMsg8="1 Platform (IOS or Android)"
-                WebDesignMsg9="Everything included in the Basic Package"
-                WebDesignMsg10="Cross-Platform App Development (iOS and Android)"
-                WebDesignMsg11="App Store Optimization (ASO)"
-                WebDesignMsg12="In-App Purchase Integration"
-                WebDesignMsg13="Enhanced App Performance Optimization"
-                WebDesignMsg14="Advanced Security Features"
-                WebDesignMsg15="Backend Development and API Integration"
-                WebDesignMsg16="User Authentication and Login"
-                WebDesignMsg17="Everything included in the Premium Package"
-                WebDesignMsg18="Custom Backend Development"
-                WebDesignMsg19="Multi-platform Support (iOS, Android, Web)"
-                WebDesignMsg20="Enhanced Security and Data Encryption"
-                WebDesignMsg21="Advanced User Authentication and Permissions"
-                WebDesignMsg22="Integration of Third-Party Services (e.g., Payment Gateways, Social Media APIs)"
-                WebDesignMsg23="Real-time Analytics and Insights"
-                WebDesignMsg24="Continuous Integration and Deployment (CI/CD)"
-                WebDesignMsg25="Dedicated Project Manager"
-                WebDesignMsg26="24/7 Technical Support"
-              />
-            </div>
+        
             {/* <div className="border-b-2 border-white">
             <section className="my-28 opacity-75">
               <div className="p-4 lg:p-16 border-2 border-white rounded-lg mx-auto max-w-screen-md">

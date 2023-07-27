@@ -187,53 +187,12 @@ const Animation = () => {
                 Our Work
               </h1>
 
-             <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
                 <AnimationCard />
               </div>
             </div>
 
-             <div id="pricing" className="my-40">
-            <PricingCard
-            firstTitle="Silver Plan"
-            secondTitle="Gold Plan"
-            thirdTitle="Platinum Plan"
-            firstPrice="$99"
-            firstDiscount="$200"
-            secondPrice="$199"
-            seoncdDiscount="$300"
-            thirdPrice="$400"
-            thirdDiscount="$299"
-
-            WebDesignMsg1="15 Sec Video"
-            WebDesignMsg2="Script Writing"
-            WebDesignMsg3="Storyboard & Characters"
-            WebDesignMsg4="Voiceover"
-            WebDesignMsg5="Animation"
-            WebDesignMsg6="Finalized & Published"
-            WebDesignMsg7=""
-            WebDesignMsg8=""
-
-            WebDesignMsg9="30 Sec Video"
-            WebDesignMsg10="Script Writing"
-            WebDesignMsg11="Storyboard & Characters"
-            WebDesignMsg12="Voiceover"
-            WebDesignMsg13="Animation"
-            WebDesignMsg14="Finalized & Published"
-            WebDesignMsg15=""
-            WebDesignMsg16=""
-
-            WebDesignMsg17="60 Sec Video"
-            WebDesignMsg18="Script Writing"
-            WebDesignMsg19="Storyboard & Characters"
-            WebDesignMsg20="Voiceover"
-            WebDesignMsg21="Animation"
-            WebDesignMsg22="Finalized & Published"
-            WebDesignMsg23=""
-            WebDesignMsg24=""
-            WebDesignMsg25=""
-            WebDesignMsg26=""
-          />
-            </div>
+           
            
           </div>
 
