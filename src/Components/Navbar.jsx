@@ -9,7 +9,7 @@ const Navbar = () => {
   const [openModal, setOpenModal] = useState();
   return (
     <div>
-      <nav class="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
+      <nav class="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 px-6 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
         <div class="flex flex-wrap items-center justify-between mx-auto">
           <NavLink to="/">
           <a href="#main-banner" class="flex items-center cursor-pointer">
@@ -62,21 +62,81 @@ const Navbar = () => {
                 </a>
                 </NavLink>
               </li>
+              <li className="py-2 pl-[3.75rem] md:py-0 md:border-0 border-t-2 border-white text-end">
+                <div class="group relative cursor-pointer">
+                  <div class="">
+                    <a
+                      data-dropdown-toggle="dropdownHover"
+                      data-dropdown-trigger="hover"
+                      id="dropdownHoverButton"
+                      href="#services"
+                      className="text-white menu-hover hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                      aria-current="page"
+                    >
+                      Services
+                    </a>
+                  </div>
+                  <div
+                    class="invisible w-64 absolute z-50 flex font-[poppins] flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+                    onClick=""
+                  >
+                    <NavLink to="/servicepage">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Mobile Application
+                    </a>
+                    </NavLink>
+                    
+                    <NavLink to="/ecommerce">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Ecommerce
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/digitalmarketing">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Digital Marketing
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/animation">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      2D / 3D Animation
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/graphicsdesign">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Graphics Desgin
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/softwaredevelopment">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Software Development
+                    </a>
+                    </NavLink>
+                  </div>
+                </div>
+              </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
+                <NavLink to="/#projects">
                 <a
                   href="#projects"
                   class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
                   Projects
                 </a>
+                </NavLink>
               </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
+                <NavLink to="/about">
                 <a
                   href="#pricing"
                   class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
-                  Prices
+                  Abour Us
                 </a>
+                </NavLink>
               </li>
             </ul>
           </div>

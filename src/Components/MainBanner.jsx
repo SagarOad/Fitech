@@ -8,6 +8,7 @@ import logo from "../assets/newLogo.png";
 import GetQuote from "./GetQuote";
 import Navbar from "./Navbar";
 // import AnimeData from "../assets/main-anime.json"
+import { NavLink } from "react-router-dom";
 
 const MainBanner = () => {
   const [openModal, setOpenModal] = useState();
@@ -26,12 +27,12 @@ const MainBanner = () => {
 
   return (
     <div id="main-banner" className=" mb-20">
-      <nav class="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
-        <div class="flex flex-wrap items-center justify-between mx-auto">
-          <a href="#main-banner" class="flex items-center cursor-pointer">
+      <nav className="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
+        <div className="flex flex-wrap items-center justify-between mx-auto">
+          <a href="#main-banner" className="flex items-center cursor-pointer">
             <img src={logo} className="md:w-[138px] w-[120px]" />
           </a>
-          <div class="flex md:order-2 md:flex-row flex-col-reverse">
+          <div className="flex md:order-2 md:flex-row flex-col-reverse">
             <button
               onClick={() => {
                 setOpenModal(true);
@@ -43,13 +44,13 @@ const MainBanner = () => {
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              class="inline-flex justify-end items-center p-2 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex justify-end items-center p-2 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
-              <span class="sr-only">Open main menu</span>
+              <span className="sr-only">Open main menu</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -64,23 +65,70 @@ const MainBanner = () => {
             </button>
           </div>
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                <a
-                  href="#services"
-                  class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
-                  aria-current="page"
-                >
-                  Services
-                </a>
+                <div class="group relative cursor-pointer">
+                  <div class="w-64">
+                    <a
+                      data-dropdown-toggle="dropdownHover"
+                      data-dropdown-trigger="hover"
+                      id="dropdownHoverButton"
+                      href="#services"
+                      className="text-white menu-hover hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                      aria-current="page"
+                    >
+                      Services
+                    </a>
+                  </div>
+                  <div
+                    class="invisible absolute z-50 flex w-full font-[poppins] flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+                    onClick=""
+                  >
+                    <NavLink to="/servicepage">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Mobile Application
+                    </a>
+                    </NavLink>
+                    
+                    <NavLink to="/ecommerce">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Ecommerce
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/digitalmarketing">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Digital Marketing
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/animation">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      2D / 3D Animation
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/graphicsdesign">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Graphics Desgin
+                    </a>
+                    </NavLink>
+
+                    <NavLink to="/softwaredevelopment">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                      Software Development
+                    </a>
+                    </NavLink>
+                  </div>
+                </div>
               </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                 <a
                   href="#projects"
-                  class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                  className="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
                   Projects
                 </a>
@@ -88,15 +136,25 @@ const MainBanner = () => {
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                 <a
                   href="#pricing"
-                  class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                  className="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
                   Prices
                 </a>
               </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
+                <NavLink to="/about">
+                <a
+                  href="#pricing"
+                  className="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                >
+                  About
+                </a>
+                </NavLink>
+              </li>
+              <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                 <a
                   href="#contact"
-                  class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                  className="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
                   Contact
                 </a>
@@ -106,7 +164,7 @@ const MainBanner = () => {
         </div>
       </nav>
 
-      <div className="px-8 md:px-24 pt-[147px] flex flex-wrap flex-col md:flex-row items-center">
+      <div className="px-8 px-6 md:px-24 pt-[147px] flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start ">
           <div className="flex items-center w-[280px] sm:w-auto backdrop-blur-xl bg-white/30 rounded-xl py-3 px-6   ">
             <TbDiscountCheckFilled className="text-[22px] mr-4 text-white font-bold" />

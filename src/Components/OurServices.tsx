@@ -10,7 +10,7 @@ const OurServices = () => {
   return (
     <div
       id="services"
-      className="w-full pt-20 md:pt-10 pb-20 px-8 md:px-24 mx-auto"
+      className="w-full pt-20 md:pt-10 pb-20 px-8 px-6 md:px-24 mx-auto"
     >
       <div className="md:w-[80%] mb-28">
         <h1 className="my-6 mb-6 text-3xl md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-left">

@@ -8,7 +8,7 @@ const ContactSection = () => {
 
   return (
     <div id="contact">
-      <div className="flex justify-center items-center backdrop-blur-xl bg-white/30 py-20 mt-28 h-auto px-8 md:px-24 mx-auto">
+      <div className="flex justify-center items-center backdrop-blur-xl bg-white/30 py-20 mt-28 h-auto px-8 px-6 md:px-24 mx-auto">
         <div className="flex flex-col md:flex-row anime-bg relative justify-between items-center">
           <div className="">
             <h1 className="text-3xl  md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-left">

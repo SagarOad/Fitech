@@ -7,11 +7,13 @@ import GraphicsDesign from "../src/pages/GraphicsDesign"
 import Animation from "../src/pages/Animation"
 import SoftwareDevelopment from "../src/pages/SoftwareDevelopment"
 import { useRoutes } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
 
 
 const App = () => {
   const routes = useRoutes([
       { path: '/', element: <Home /> },
+      { path: '/about', element: <AboutUs /> },
       { path: '/servicepage', element: <MobileApp /> },
       { path: '/ecommerce', element: <Ecommerce /> },
       { path: '/digitalmarketing', element: <DigitalMarketing /> },

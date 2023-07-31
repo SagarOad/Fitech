@@ -22,8 +22,8 @@ const Animation = () => {
   return (
     <div>
       <Navbar />
-      <div className="main-bg md:px-24">
-        <div className="pt-[147px] flex md:flex-row items-center">
+      <div className="main-bg px-6 md:px-24">
+        <div className="pt-[147px] flex flex-col md:flex-row items-center">
           <div>
             <h1 className="main-banner-heading mt-4 text-3xl sm:text-5xl md:text-[4.5rem] text-white font-[nexa] font-bold leading-tight  md:text-left">
               Animation
@@ -54,7 +54,7 @@ const Animation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mt-20 md:px-20">
+        <div className="features mt-40 h-auto section-features-wrap backdrop-blur-xl bg-white/30 block md:flex items-center px-8 md:px-24 my-4 justify-between rounded-3xl">
           <div className="">
             <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-white font-[nexa] font-bold leading-tight">
               Why Choose Us
@@ -74,8 +74,8 @@ const Animation = () => {
               Features
             </h1>
           </div>
-          <div className="grid grid-cols-12 gap-8 justify-center items-center">
-            <div className="col-span-4 p-6">
+          <div className="backdrop-blur-xl grid grid-cols-12 gap-8 justify-center items-center">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] mx-auto text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px]">
                   <MdOutlineDashboardCustomize />
@@ -92,7 +92,7 @@ const Animation = () => {
               </div>
             </div>
 
-            <div className="col-span-4 p-6">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
                   <MdAnimation />
@@ -109,7 +109,7 @@ const Animation = () => {
               </div>
             </div>
 
-            <div className="col-span-4 p-6">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
                   <TbBrandStorytel />
@@ -126,7 +126,7 @@ const Animation = () => {
               </div>
             </div>
 
-            <div className="col-span-4 p-6">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
                   <MdOutlineRecordVoiceOver />
@@ -144,7 +144,7 @@ const Animation = () => {
               </div>
             </div>
 
-            <div className="col-span-4 p-6">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
                   <MdAutoAwesomeMotion />
@@ -161,7 +161,7 @@ const Animation = () => {
               </div>
             </div>
 
-            <div className="col-span-4 p-6">
+            <div className="col-span-12 md:col-span-4 p-6">
               <div className="">
                 <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
                   <GiPlatform />

@@ -5,7 +5,7 @@ import anime from "../assets/laptop.json"
 const Branding = () => {
   return (
     <div className="">
-      <div className="w-full pt-20 md:pt-44 px-8 md:px-24 md:pr-0 mx-auto">
+      <div className="w-full pt-20 md:pt-44 px-8 px-6 md:px-24 md:pr-0 mx-auto">
         <div className="flex flex-col justify-between md:flex-row">
           <div className="xl:basis-2/4">
             <h1 className="mb-6 text-3xl md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-[70px]  md:text-left">

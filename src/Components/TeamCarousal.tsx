@@ -10,7 +10,7 @@ interface Props {
 
 const TeamCarousal = ({ designation, name, description, img }: Props) => {
   return (
-    <div className="anime-banner backdrop-blur-xl bg-white/30 h-auto md:h-[400px] pb-6 pt-6 md:pb-0 px-16 md:px-24 mx-auto">
+    <div className="anime-banner backdrop-blur-xl bg-white/30 h-auto md:h-[400px] pb-6 pt-6 md:pb-0 px-16 px-6 md:px-24 mx-auto">
       <div className="flex flex-col sm:flex-row anime-bg relative justify-between items-center">
         <div className="w-full md:w-[50%]">
             <h2 className="text-[26px] text-[nexa] text-white">{designation}</h2>

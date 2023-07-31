@@ -8,7 +8,7 @@ import img7 from "../assets//updated-portfolio/Web/screencapture-textore-net-202
 
 const PortfolioGallery = () => {
   return (
-    <div className="px-0  mb-20 mx-auto">
+    <div className="px-0 mb-20 mx-auto">
       <section className="portfolio-section pb-8" id="portfolio">
         <div className="container-fluid">
           <div className="container h-[400px] md:h-[690px] overflow-scroll mx-auto px-2 md:px-5 py-2 lg:px-6 lg:pt-4">

@@ -10,8 +10,8 @@ const Pricing = () => {
   };
 
   return (
-    <div id="pricing" className="px-8 pb-16 py-12 md:px-24 mx-auto">
-      <div className="flex flex-wrap md:flex-auto my-12 justify-center px-4 md:px-24 mx-auto">
+    <div id="pricing" className="px-8 pb-16 py-12 px-6 md:px-24 mx-auto">
+      <div className="flex flex-wrap md:flex-auto my-12 justify-center px-4 px-6 md:px-24 mx-auto">
         <button
           className={
             toggleState === 1

@@ -4,10 +4,10 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="">
+    <div className=" mt-14">
             <hr className="w-full bg-white opacity-30 h-[1px]" />
 
-      <div className="py-12 px-8 md:px-24 mx-auto">
+      <div className="py-12 px-6 md:px-24 mx-auto">
         <div className="block md:flex justify-between items-center">
           <div>
             <img className="w-[220px] mx-auto md:mx-0" src={Logo} />
@@ -22,19 +22,19 @@ const Footer = () => {
               </a>
             </div>
 
-            <p className="text-[24px] font-medium text-center md:text-right text-white font-[nexa-light] mt-6">
+            {/* <p className="text-[24px] font-medium text-center md:text-right text-white font-[nexa-light] mt-6">
               Head Office
-            </p>
-            <p className="text-[21px] text-center md:text-right text-white font-[nexa-light]">
+            </p> */}
+            <p className="text-[21px] mt-8 text-center md:text-right text-white font-[nexa-light]">
               9432, Emerald Woods Way,Knoxville, TN 37922
             </p>
 
-            <p className="text-[24px] font-medium text-center md:text-right text-white font-[nexa-light] mt-4">
+            {/* <p className="text-[24px] font-medium text-center md:text-right text-white font-[nexa-light] mt-4">
              Regional Office
             </p>
             <p className="text-[21px] text-center md:text-right text-white font-[nexa-light]">
               214, The Plaza, Clifton Block 9,Karachi, Pakistan
-            </p>
+            </p> */}
             <p className="text-[21px] text-center text-white md:text-right font-[nexa-light]">
               Info@fameitech.com
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full bg-white opacity-30 h-[1px]" />
-      <div className="py-8 px-16 md:px-24 mx-auto text-[21px] text-white text-center font-[nexa-light]">
+      <div className="py-8 px-6 md:px-24 mx-auto text-[21px] text-white text-center font-[nexa-light]">
         © 2023 Fame Itech, All Rights Reserved
       </div>
     </div>

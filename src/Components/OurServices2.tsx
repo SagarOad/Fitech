@@ -5,7 +5,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 
 const OurServices2 = () => {
   return (
-    <div className="w-full py-16  px-8 md:px-24 mx-auto">
+    <div className="w-full py-16  px-8 px-6 md:px-24 mx-auto">
       <div className="flex flex-wrap flex-col md:flex-row">
         <div className="xl:basis-2/4">
           <h1 className="services2-heading mb-6 text-3xl md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-[70px]  md:text-left">

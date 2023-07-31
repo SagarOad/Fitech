@@ -2,10 +2,10 @@ import mockup from "../assets/mobile-mockup.png";
 
 const Anime = () => {
   return (
-    <div className="anime-banner backdrop-blur-xl bg-white/30 py-28 mt-20 md:mt-10 mb-20 h-auto px-8 md:px-24 mx-auto">
+    <div className="anime-banner backdrop-blur-xl bg-white/30 py-28 mt-20 md:mt-10 mb-20 h-auto px-6 md:px-24 mx-auto">
       <div className="block md:flex anime-bg relative justify-between items-center">
         <div className="">
-          <h1 className="text-3xl text-center md:text-right md:text-[4rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-left">
+          <h1 className="text-3xl text-center  md:text-[4rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-left">
             Transforming Visions Into Reality With{" "}
             <span className="mx-4 span-color bg-clip-text text-[#f58020]">
               Creativity And Expertise.
