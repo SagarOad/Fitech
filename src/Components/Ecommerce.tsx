@@ -1,6 +1,6 @@
-import img1 from "../assets/updated-portfolio/ecommerce.png"
-import img2 from "../assets/updated-portfolio/ecommerce2.png"
-import img3 from "../assets/updated-portfolio/coupan.png"
+import img1 from "../assets/ecommerce/laptop.png"
+import img2 from "../assets/ecommerce/laptop.png"
+import img3 from "../assets/ecommerce/laptop.png"
 
 const Ecommerce = () => {
   return (

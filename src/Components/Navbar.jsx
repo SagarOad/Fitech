@@ -134,7 +134,7 @@ const Navbar = () => {
                   href="#pricing"
                   class="text-white hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
                 >
-                  Abour Us
+                  About
                 </a>
                 </NavLink>
               </li>

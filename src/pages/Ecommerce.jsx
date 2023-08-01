@@ -188,7 +188,7 @@ const Ecommerce = () => {
                 Our Work
               </h1>
 
-             <div id="projects" className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+             <div id="projects" className="mt-6 relative rounded-3xl ">
                 <EcommerceCard />
               </div>
             </div>
