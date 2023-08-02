@@ -1548,3 +1548,8 @@ img.team-img.border-2.mx-auto.md\:mx-1.border-\[\#f58020\].rounded-full.w-\[359p
   border: 2px solid white;
   opacity: 75%;
 }
+
+
+a.my-2.block.border-b.border-gray-100.py-1.font-semibold.text-gray-500.hover\:text-\[\#f58020\].md\:mx-2 {
+  text-align: start;
+}

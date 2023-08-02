@@ -44,105 +44,100 @@ const OurServices = () => {
           </NavLink>
         </div>
 
-
-
         <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-        <NavLink to="/ecommerce">
-         <div className="flex">
-          <div>
-            <img className="service-icons w-32" src={img2} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              Ecommerce Solutions
-            </h1>
-            <p className="text-white font-[Poppins]">
-              The best eCommerce solutions for your business to prosper and
-              reach the global{" "}
-            </p>
-          </div>
-          </div>
+          <NavLink to="/ecommerce">
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img2} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  Website Development
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  The best Website Development solutions for your business to
+                  prosper and reach the global market.{" "}
+                </p>
+              </div>
+            </div>
           </NavLink>
         </div>
 
         <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
-         <NavLink to="/digitalmarketing">
-          <div className="flex">
-          <div>
-            <img className="service-icons w-32" src={img3} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              Digital Marketing
-            </h1>
-            <p className="text-white font-[Poppins]">
-              Best digital marketing solutions to take your brand to the next
-              level
-            </p>
-          </div>
-          </div>
+          <NavLink to="/digitalmarketing">
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img3} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  Digital Marketing
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  Best digital marketing solutions to take your brand to the
+                  next level
+                </p>
+              </div>
+            </div>
           </NavLink>
         </div>
 
         <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-        <NavLink to="animation">
-        <div className="flex">
-          <div>
-            <img className="service-icons w-32" src={img4} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              2D / 3D Animation
-            </h1>
-            <p className="text-white font-[Poppins]">
-              Bring your imagination to life with our exceptional 2D / 3D
-              animation services
-            </p>
-          </div>
-          </div>
+          <NavLink to="animation">
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img4} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  2D / 3D Animation
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  Bring your imagination to life with our exceptional 2D / 3D
+                  animation services
+                </p>
+              </div>
+            </div>
           </NavLink>
         </div>
 
         <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
           <NavLink to="/graphicsdesign">
-          <div className="flex">
-          <div>
-            <img className="service-icons w-32" src={img5} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              Graphics Design
-            </h1>
-            <p className="text-white font-[Poppins]">
-              We provide custom design solutions that range from Logo Design to
-              Mobile and Web{" "}
-            </p>
-          </div>
-          </div>
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img5} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  Graphics Design
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  We provide custom design solutions that range from Logo Design
+                  to Mobile and Web{" "}
+                </p>
+              </div>
+            </div>
           </NavLink>
         </div>
 
         <div className="opacity-95 p-12 px-5 pt-7.5 pb-5 shadow-md shadow-[#000] hover:shadow-lg hover:mt-[-12px] transition-all  hover:shadow-[#000] sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-         <NavLink to="/softwaredevelopment">
-          <div className="flex">
-          <div>
-            <img className="service-icons w-32" src={img6} />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-white text-[21px] font-[Poppins] mb-4">
-              Software Development
-            </h1>
-            <p className="text-white font-[Poppins]">
-              Empower your business with our expert software development
-              solutions
-            </p>
-          </div>
-          </div>
+          <NavLink to="/softwaredevelopment">
+            <div className="flex">
+              <div>
+                <img className="service-icons w-32" src={img6} />
+              </div>
+              <div className="ml-8">
+                <h1 className="text-white text-[21px] font-[Poppins] mb-4">
+                  Software Development
+                </h1>
+                <p className="text-white font-[Poppins]">
+                  Empower your business with our expert software development
+                  solutions
+                </p>
+              </div>
+            </div>
           </NavLink>
         </div>
-
-
-        
       </div>
     </div>
   );

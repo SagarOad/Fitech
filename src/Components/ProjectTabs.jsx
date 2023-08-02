@@ -58,7 +58,7 @@ const ProjectTabs = () => {
           <div
             role="tablist"
             aria-label="tabs"
-            className="relative w-[auto] text-[12px] xl:text-[18px] xl:w-max mx-auto flex flex-wrap md:h-12 md:grid md:grid-cols-6 items-center px-[3px] rounded-full md:backdrop-blur-xl md:bg-white/30 overflow-hidden shadow-2xl shadow-900/20 transition"
+            className="relative w-[auto] text-[12px] xl:text-[18px] xl:w-max mx-auto flex flex-wrap md:h-12 md:grid md:grid-cols-5 items-center px-[3px] rounded-full md:backdrop-blur-xl md:bg-white/30 overflow-hidden shadow-2xl shadow-900/20 transition"
           >
             <div className="absolute hidden md:block indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-[#f58020] shadow-md"></div>
             <button
@@ -70,16 +70,6 @@ const ProjectTabs = () => {
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
               <span className="text-white">Web Development</span>
-            </button>
-            <button
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-2"
-              id="tab-2"
-              tabindex="-1"
-              className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
-            >
-              <span className="text-white">Ecommerce</span>
             </button>
             <button
               role="tab"

@@ -25,6 +25,16 @@ const MainBanner = () => {
     }
   }, [index]);
 
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setDropdownVisible(!isDropdownVisible);
+  };
+
+  const handleDropdownClose = () => {
+    setDropdownVisible(false);
+  };
+
   return (
     <div id="main-banner" className=" mb-20">
       <nav className="backdrop-blur-xl bg-white/30 py-3 px-6 mb-12 md:px-24 mx-auto fixed w-full z-20 top-0 left-0">
@@ -67,64 +77,63 @@ const MainBanner = () => {
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
+            onMouseLeave={handleDropdownClose}
+            onClick={handleDropdownToggle}
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
-              <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                <div class="group relative cursor-pointer">
-                  <div class="w-64">
-                    <a
-                      data-dropdown-toggle="dropdownHover"
-                      data-dropdown-trigger="hover"
-                      id="dropdownHoverButton"
-                      href="#services"
-                      className="text-white menu-hover hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
-                      aria-current="page"
-                    >
-                      Services
-                    </a>
-                  </div>
-                  <div
-                    class="invisible absolute z-50 flex w-full font-[poppins] flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
-                    onClick=""
-                  >
-                    <NavLink to="/servicepage">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      Mobile Application
-                    </a>
-                    </NavLink>
-                    
-                    <NavLink to="/ecommerce">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      Ecommerce
-                    </a>
-                    </NavLink>
-
-                    <NavLink to="/digitalmarketing">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      Digital Marketing
-                    </a>
-                    </NavLink>
-
-                    <NavLink to="/animation">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      2D / 3D Animation
-                    </a>
-                    </NavLink>
-
-                    <NavLink to="/graphicsdesign">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      Graphics Desgin
-                    </a>
-                    </NavLink>
-
-                    <NavLink to="/softwaredevelopment">
-                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
-                      Software Development
-                    </a>
-                    </NavLink>
-                  </div>
-                </div>
-              </li>
+            <li className="py-2 pl-[3.75rem] md:py-0 md:border-0 border-t-2 border-white text-end">
+            <div className="group relative cursor-pointer">
+              <div>
+                <a
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  id="dropdownHoverButton"
+                  href="#services"
+                  className="text-white menu-hover hover:text-[#f58020] font-[nexa-light] text-[18px] md:text-[18px]"
+                  aria-current="page"
+                  onMouseEnter={handleDropdownToggle}
+                >
+                  Services
+                </a>
+              </div>
+              <div
+                className={`${
+                  isDropdownVisible ? "block" : "hidden"
+                } invisible md:visible w-64 absolute z-50 flex font-[poppins] flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl`}
+              >
+                <NavLink to="/servicepage">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    Mobile Application
+                  </a>
+                </NavLink>
+                <NavLink to="/ecommerce">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    Web Development
+                  </a>
+                </NavLink>
+                <NavLink to="/digitalmarketing">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    Digital Marketing
+                  </a>
+                </NavLink>
+                <NavLink to="/animation">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    2D / 3D Animation
+                  </a>
+                </NavLink>
+                <NavLink to="/graphicsdesign">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    Graphics Design
+                  </a>
+                </NavLink>
+                <NavLink to="/softwaredevelopment">
+                  <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-[#f58020] md:mx-2">
+                    Software Development
+                  </a>
+                </NavLink>
+              </div>
+            </div>
+          </li>
               <li className="pl-[3.75rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                 <a
                   href="#projects"
@@ -164,7 +173,7 @@ const MainBanner = () => {
         </div>
       </nav>
 
-      <div className="px-8 px-6 md:px-24 pt-[147px] flex flex-wrap flex-col md:flex-row items-center">
+      <div className="px-8 md:px-24 pt-[147px] flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start ">
           <div className="flex items-center w-[280px] sm:w-auto backdrop-blur-xl bg-white/30 rounded-xl py-3 px-6   ">
             <TbDiscountCheckFilled className="text-[22px] mr-4 text-white font-bold" />
