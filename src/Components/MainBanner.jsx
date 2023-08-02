@@ -9,6 +9,7 @@ import GetQuote from "./GetQuote";
 import Navbar from "./Navbar";
 // import AnimeData from "../assets/main-anime.json"
 import { NavLink } from "react-router-dom";
+import bgImg from "../assets/webdesign/3274408.jpg"
 
 const MainBanner = () => {
   const [openModal, setOpenModal] = useState();
