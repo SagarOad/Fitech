@@ -1,29 +1,56 @@
-import Lottie from "lottie-react"
-import anime from "../assets/laptop.json"
+import Lottie from "lottie-react";
+import anime from "../assets/laptop.json";
+import growth from "../assets/vectors/growth.jpg";
+
+import { BsFillRocketTakeoffFill } from 'react-icons/bs';
+import { IoIosPeople } from 'react-icons/io';
+import { GiReceiveMoney } from 'react-icons/gi';
+
 
 
 const Branding = () => {
   return (
-    <div className="">
-      <div className="w-full pt-20 md:pt-44 px-8 px-6 md:px-24 md:pr-0 mx-auto">
-        <div className="flex flex-col justify-between md:flex-row">
+    <div className="bg-white rounded-t-[50px]">
+      <div className="w-full pt-20  px-8 md:px-24 md:pr-0 mx-auto">
+        <div className="flex flex-col justify-between items-center md:flex-row">
+          <div>
+            <img
+              className="w-auto md:w-[500px] mt-[0px]"
+              src={growth}
+            ></img>
+          </div>
           <div className="xl:basis-2/4">
-            <h1 className="mb-6 text-3xl md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-[70px]  md:text-left">
-            Business
+            <h1 className="main-banner-heading relative mt-4 mb-12 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              Business
               <span className="mx-4 span-color bg-clip-text text-[#f58020]">
-                 Growth
+                Growth
               </span>
             </h1>
-            <p className="leading-normal text-white opacity-75  font-[nexa-light]  text-base md:text-[21px] mb-8  md:text-left">
-              We Are A Team Of Proficient And Highly Qualified Individuals Who
-              Fully Comprehends The Significance Of Branding In Enhancing The
-              Customer Base. We Are A Professional Software Agency With A
-              Primary Focus On Crafting A Strategy That Can Help You Target More
-              Leads And Enhance Your ROI.
-            </p>
-          </div>
-          <div>
-            <Lottie className="w-auto md:w-[660px] mt-[0px] md:mt-[-154px]" animationData={anime}></Lottie>
+            <ul>
+              <li className="flex items-center justify-start mb-8">
+                <BsFillRocketTakeoffFill className="text-[#f58020] text-[32px] md:text-[52px]" />
+                <p className="leading-normal text-[#212121] opacity-75 ml-6 pr-20 font-sans font-medium text-base md:text-[26px] md:text-left">
+                  Boosting Brands
+                </p>
+              </li>
+              <li className="flex items-center justify-start mb-7">
+                <IoIosPeople className="text-[#f58020] text-[32px] md:text-[72px]"/>
+                <p className="leading-normal text-[#212121] opacity-75 ml-4 pr-20 font-sans font-medium text-base md:text-[26px] md:text-left">
+                  Targeting Leads
+                </p>
+              </li>
+              <li className="flex items-center justify-start mb-8">
+              <GiReceiveMoney className="text-[#f58020] text-[32px] md:text-[72px]" />
+                <p className="leading-normal text-[#212121] opacity-75 ml-6 pr-20 font-sans font-medium text-base md:text-[26px] md:text-left">
+                  Maximizing ROI
+                </p>
+              </li>
+            </ul>
+            <div className="flex justify-end px-16">
+            <button className="bg-white mr-0 md:mr-[22px] shadow-md z-20 text-black opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[18px]">
+              Learn more
+            </button>
+            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const PortfolioGallery = () => {
         <div className="container h-[400px] md:h-[800px] overflow-scroll mx-auto px-2 md:px-5 py-2 lg:px-6 lg:pt-4">
           <div className="-m-1 flex flex-wrap md:-m-2">
             <div className="flex w-full flex-wrap">
-            <div className="grayscale hover:grayscale-0 ease-in duration-300 w-full mb-16 p-1 md:p-2">
+            {/* <div className="grayscale hover:grayscale-0 ease-in duration-300 w-full mb-16 p-1 md:p-2">
                 <a href="https://truelinkswear.com/" target="_blank">
                 <img
                   alt="gallery"
@@ -37,7 +37,7 @@ const PortfolioGallery = () => {
                   src={images20}
                 />
                 </a>
-              </div>
+              </div> */}
               <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
                 <a href="https://bravogroup.us/" target="_blank">
                 <img

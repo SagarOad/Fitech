@@ -14,16 +14,16 @@ import ProjectTabs from "../Components/ProjectTabs";
 
 const Home = () => {
   return (
-     <div className="main-bg  leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+     <div className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
       <MainBanner />
       <OurServices2 />
-      <Features />
-      <Branding />
+      {/* <Features /> */}
       <OurServices />
+      <Branding />
       <Anime />
       <ProjectTabs />
       <ContactSection />
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <TeamSlider /> */}
       <Footer />
     </div>

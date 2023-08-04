@@ -54,6 +54,11 @@ body {
   align-items: center;
 }
 
+/* 
+.services {
+  background-image: url("../src/assets/vectors/wave.png");
+} */
+
 .scroll {
   height: 100vh;
   width: 100%;
