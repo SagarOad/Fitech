@@ -45,10 +45,10 @@ const ProjectTabs = () => {
     <div id="projects" className="">
       <div className="row mb-12">
         <div className="col-lg-12 text-center">
-          <h2 className="text-3xl md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-center">
+          <h2 className="text-3xl md:text-[3rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-tight md:text-center">
             Project Gallery
           </h2>
-          <p className="text-white opacity-85 mt-3 font-[poppins] text-base md:text-[21px]">
+          <p className="text-[#f58020] opacity-85 mt-3 font-[poppins] text-base md:text-[21px]">
             See our work!
           </p>
         </div>
@@ -69,7 +69,7 @@ const ProjectTabs = () => {
               tabindex="0"
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
-              <span className="text-white">Web Development</span>
+              <span className="text-[#212121]">Web Development</span>
             </button>
             <button
               role="tab"
@@ -79,7 +79,7 @@ const ProjectTabs = () => {
               tabindex="-1"
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
-              <span className="text-white">UI / UX</span>
+              <span className="text-[#212121]">UI / UX</span>
             </button>
             <button
               role="tab"
@@ -89,7 +89,7 @@ const ProjectTabs = () => {
               tabindex="-1"
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
-              <span className="text-white">Logo Design</span>
+              <span className="text-[#212121]">Logo Design</span>
             </button>
             <button
               role="tab"
@@ -99,7 +99,7 @@ const ProjectTabs = () => {
               tabindex="-1"
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
-              <span className="text-white">Mobile App</span>
+              <span className="text-[#212121]">Mobile App</span>
             </button>
             <button
               role="tab"
@@ -109,7 +109,7 @@ const ProjectTabs = () => {
               tabindex="-1"
               className="relative block md:p-2 p-0 md:m-0 m-4 h-10 tab rounded-full"
             >
-              <span className="text-white">2d / 3d Animation</span>
+              <span className="text-[#212121]">2d / 3d Animation</span>
             </button>
           </div>
           <div id="projects" className="mt-6 relative rounded-3xl">

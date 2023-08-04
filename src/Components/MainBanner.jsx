@@ -38,8 +38,8 @@ const MainBanner = () => {
   };
 
   return (
-    <div id="main-banner" className="">
-      <nav className=" pb-3 pt-6 px-6 mb-12 md:px-14 mx-auto w-full z-20">
+    <div id="main-banner" className=" pt-3">
+      <nav className="bg-white shadow-md rounded-full py-4 px-6 mb-12 md:px-14 mx-auto w-[85%] z-20">
         <div className="flex flex-wrap items-center justify-between mx-auto">
           <div className="flex justify-center">
             <a
@@ -64,7 +64,7 @@ const MainBanner = () => {
                         data-dropdown-trigger="hover"
                         id="dropdownHoverButton"
                         href="#services"
-                        className="text-[#212121] menu-hover hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[21px]"
+                        className="text-[#212121] menu-hover hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                         aria-current="page"
                         onMouseEnter={handleDropdownToggle}
                       >
@@ -112,7 +112,7 @@ const MainBanner = () => {
                 <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                   <a
                     href="#projects"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[21px]"
+                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                   >
                     Projects
                   </a>
@@ -120,7 +120,7 @@ const MainBanner = () => {
                 <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                   <a
                     href="#pricing"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[21px]"
+                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                   >
                     Prices
                   </a>
@@ -129,7 +129,7 @@ const MainBanner = () => {
                   <NavLink to="/about">
                     <a
                       href="#pricing"
-                      className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[21px]"
+                      className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                     >
                       About
                     </a>
@@ -138,7 +138,7 @@ const MainBanner = () => {
                 <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                   <a
                     href="#contact"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[21px]"
+                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                   >
                     Contact
                   </a>
@@ -215,10 +215,10 @@ const MainBanner = () => {
               src="https://video-previews.elements.envatousercontent.com/h264-video-previews/fcb18010-f6be-43b0-80d6-75cbee4ec03e/27659685.mp4"
             />
             <div className="flex justify-end mt-12">
-              <button className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[21px]">
+              <button className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[19px]">
                 Our Work
               </button>
-              <button className="bg-[#212121] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[21px]">
+              <button className="bg-[#212121] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[19px]">
                 About Us
               </button>
             </div>

@@ -2,50 +2,37 @@ import { IoMdCall } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 import { useState } from "react";
 import GetQuote from "./GetQuote";
+import arrow from "../assets/icons/arrow.png"
 
 const ContactSection = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div id="contact">
-      <div className="flex justify-center items-center backdrop-blur-xl bg-white/30 py-20 mt-28 h-auto px-8 px-6 md:px-24 mx-auto">
-        <div className="flex flex-col md:flex-row anime-bg relative justify-between items-center">
+    <div className="relative">
+    <div id="contact" className="bg-white ml-auto w-[90%] h-[60vh]">
+      <div className="bg-[#f58020] absolute left-0 rounded-r-[50px] w-[90%] py-20 mt-[150px] h-auto px-8 md:px-24 mr-auto">
+        <div className="anime-bg flex relative items-center">
+        
+          <img src={arrow} className="w-[180px] rotate-[250deg] mr-20" />
+        
           <div className="">
-            <h1 className="text-3xl  md:text-[3rem] text-white font-[nexa] opacity-95 font-bold leading-tight md:text-left">
-              Get expert advice for your project.
+            <h1 className="text-3xl text-center  md:text-[4rem] text-[white] font-[nexa] opacity-95 font-bold leading-tight md:text-left">
+              Ready to work with us?
             </h1>
             <button
               onClick={() => {
                 setOpenModal(true);
               }}
-              className="get-started px-4 py-4 text-3xl mt-4 md:text-[3rem] text-white font-[nexa] opacity-95"
+              className="bg-[#212121] mt-6 mr-0 md:mr-[22px] z-20 text-white md:py-3 py-2 md:px-8 px-3 rounded-full font-sans font-medium text-[12px] md:text-[21px]"
             >
-              Contact us now!
+              Let's Talk
             </button>
-          </div>
-          <div className="mob-svg-container py-4 md:py-9 md:px-9">
-            <div className="flex items-center">
-              <div className="bg-[#f580202a] my-4 mr-4 p-4 rounded-full">
-                <IoMdCall className="text-[36px] md:text-[48px] text-[#f58020]" />
-              </div>
-              <h1 className="text-[20px] md:text-[28px] font-bold text-white font-[nexa-light]">
-                Contact us today at our toll-free number: (TOLL FREE)
-                0092-213-5308703
-              </h1>
-            </div>
-
-            <div className="flex items-center">
-              <div className="bg-[#f580202a] my-4 mr-4 p-4 rounded-full">
-                <AiOutlineMail className="text-[36px] md:text-[48px] text-[#f58020]" />
-              </div>
-              <h1 className="text-[20px] md:text-[28px] font-bold text-white font-[nexa-light]">
-                Discuss Your Ideas Info@Fameitech.Com
-              </h1>
-            </div>
           </div>
         </div>
       </div>
+      
       {openModal && <GetQuote closeModal={setOpenModal} Title="Contact Us" />}
+    </div>
     </div>
   );
 };
