@@ -10,13 +10,13 @@ const ContactSection = () => {
   return (
     <div className="relative">
     <div id="contact" className="bg-white ml-auto w-[90%] h-[60vh]">
-      <div className="bg-[#f58020] absolute left-0 rounded-r-[50px] w-[90%] py-20 mt-[150px] h-auto px-8 md:px-24 mr-auto">
+      <div className="bg-[#f58020] absolute left-0 bottom-0 w-[100%] py-20 h-auto px-8 md:px-24 mr-auto">
         <div className="anime-bg flex relative items-center">
         
           <img src={arrow} className="w-[180px] rotate-[250deg] mr-20" />
         
           <div className="">
-            <h1 className="text-3xl text-center  md:text-[4rem] text-[white] font-[nexa] opacity-95 font-bold leading-tight md:text-left">
+            <h1 className="text-3xl text-center md:text-[4rem] text-[white] font-[nexa] opacity-95 font-bold leading-tight md:text-left">
               Ready to work with us?
             </h1>
             <button

@@ -48,7 +48,6 @@ const MainBanner = () => {
             >
               <img src={logo} className="md:w-[168px] w-[120px]" />
             </a>
-
             <div
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
