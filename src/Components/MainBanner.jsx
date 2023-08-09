@@ -39,8 +39,8 @@ const MainBanner = () => {
 
   return (
     <div id="main-banner" className=" pt-3">
-      <nav className="bg-white shadow-md rounded-full py-4 px-6 mb-12 md:px-14 mx-auto w-[85%] z-20">
-        <div className="flex flex-wrap items-center justify-between mx-auto">
+      <nav className="py-4 px-6 mb-12 md:px-14 mx-auto z-20">
+        <div className="flex md:flex-wrap items-center justify-between mx-auto">
           <div className="flex justify-center">
             <a
               href="#main-banner"
@@ -181,10 +181,10 @@ const MainBanner = () => {
         </div>
       </nav>
 
-      <div className="flex justify-center items-center pt-16 pb-32">
+      <div className="flex justify-center items-center pt-6 pb-32">
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
-            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[6rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-[5rem] sm:text-5xl md:text-[6rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-44 top-[-33px]">
                 <img src={shineSvt} className="w-[80px]" />
               </span>{" "}
@@ -199,7 +199,7 @@ const MainBanner = () => {
               </span>
             </h1>
 
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[22px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-[20px] md:text-[22px] mb-8 md:text-left">
               Unlock digital excellence with us. Elevate your brand's potential
               and achieve success in the digital realm.
             </p>
@@ -214,10 +214,10 @@ const MainBanner = () => {
               src="https://video-previews.elements.envatousercontent.com/h264-video-previews/fcb18010-f6be-43b0-80d6-75cbee4ec03e/27659685.mp4"
             />
             <div className="flex justify-end mt-12">
-              <button className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[19px]">
+              <button className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] md:text-[19px]">
                 Our Work
               </button>
-              <button className="bg-[#212121] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[19px]">
+              <button className="bg-[#212121] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] ml-3 md:text-[19px]">
                 About Us
               </button>
             </div>

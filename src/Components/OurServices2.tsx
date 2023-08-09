@@ -1,7 +1,3 @@
-import { IoMdCall } from "react-icons/io";
-import { AiFillStar, AiFillFlag } from "react-icons/ai";
-import { BsShieldFillCheck } from "react-icons/bs";
-import { BsFillPeopleFill } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import ServiceImg from "../assets/websites/all-devices-white.png";
 
@@ -17,7 +13,7 @@ const OurServices2 = () => {
               future
             </span>
           </h1>
-          <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[22px] mb-8 md:text-left">
+          <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-[20px] md:text-[22px] mb-8 md:text-left">
             we pride ourselves on our ability to meet the ever-evolving digital
             demands of a wide range of businesses.
           </p>
@@ -99,7 +95,7 @@ const OurServices2 = () => {
           <img src={ServiceImg} />
 
           <div className="flex justify-end items-center mt-3 mr-12">
-            <button className="flex justify-center items-center mr-0 md:mr-[22px] z-20 text-black opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[21px]">
+            <button className="flex justify-center items-center mr-0 md:mr-[22px] z-20 text-black opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] md:text-[21px]">
               View more 
               <AiOutlineArrowRight className="ml-2" />
             </button>

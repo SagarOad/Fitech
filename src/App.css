@@ -712,7 +712,6 @@ a,
   color: #fff;
 }
 
-
 .portfolio-section ::-webkit-scrollbar {
   display: none;
 }
@@ -1558,7 +1557,19 @@ img.team-img.border-2.mx-auto.md\:mx-1.border-\[\#f58020\].rounded-full.w-\[359p
   opacity: 75%;
 }
 
-
 a.my-2.block.border-b.border-gray-100.py-1.font-semibold.text-gray-500.hover\:text-\[\#f58020\].md\:mx-2 {
   text-align: start;
+}
+
+@media (max-width: 767px) {
+  div#navbar-sticky {
+    position: absolute;
+    left: -35px;
+    margin-top: 28px;
+    opacity: 100%;
+  }
+
+  nav.py-4.px-6.mb-12.md\:px-14.mx-auto.z-20 {
+    position: relative;
+  }
 }

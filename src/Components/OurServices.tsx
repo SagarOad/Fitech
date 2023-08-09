@@ -1,9 +1,3 @@
-import img1 from "../assets/icons/Frame-1.png";
-import img2 from "../assets/icons/Frame-2.png";
-import img3 from "../assets/icons/Frame-3.png";
-import img4 from "../assets/icons/Frame-4.png";
-import img5 from "../assets/icons/Frame-5.png";
-import img6 from "../assets/icons/Frame-6.png";
 import { NavLink } from "react-router-dom";
 import shineSvt from "../assets/header-illustration.svg";
 import services from "../assets/vectors/services.jpg";
@@ -19,7 +13,7 @@ const OurServices = () => {
       <div className="md:w-[80%] mb-28">
         <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
           <span className="flex justify-center absolute left-56 top-[70px]">
-            <img src={shineSvt} className="w-[50px]" />
+            <img src={shineSvt} className="w-[50px] hidden md:visible" />
           </span>
           Here’s what <br />
           we do
@@ -30,7 +24,7 @@ const OurServices = () => {
         <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
           <img src={services} className="rounded-[26px]" />
 
-          <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
+          <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-[20px] md:text-[22px] mb-8 text-center">
             boost your online presence and make the most of the digital world!
           </p>
         </div>

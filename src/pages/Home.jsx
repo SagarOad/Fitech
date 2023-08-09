@@ -23,7 +23,7 @@ const Home = () => {
       <Anime />
       <ProjectTabs />
       <ContactSection />
-      {/* <Pricing /> */}
+      <Pricing />
       {/* <TeamSlider /> */}
       <Footer />
     </div>
