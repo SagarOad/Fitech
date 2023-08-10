@@ -8,6 +8,7 @@ import digiMarket from "../assets/vectors/digitalMarketing.png";
 import lineArt from "../assets/vectors/bwink_ppl_09_single_10.jpg";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
+import Work from "../Components/Animation";
 
 const Animation = () => {
   const [openModal, setOpenModal] = useState();
@@ -206,7 +207,24 @@ const Animation = () => {
             </p>
           </div>
         </div>
+
+       
+
       </div>
+
+      <div>
+       
+       <div className="flex flex-col mt-20 md:px-20">
+             <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-black font-[nexa] font-bold leading-tight">
+               Our Work
+             </h1>
+
+             <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
+               <Work />
+             </div>
+           </div>
+
+         </div>
 
       <div>
         <ContactSection />

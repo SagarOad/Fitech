@@ -16,7 +16,7 @@ const ProjectTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className=" px-8">
+    <div className=" px-8" id="our-work">
       <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
         Our Work
       </h1>

@@ -1,4 +1,3 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
 import ServiceImg from "../assets/websites/all-devices-white.png";
 
 const OurServices2 = () => {
@@ -94,12 +93,7 @@ const OurServices2 = () => {
         <div className="xl:basis-2/4 pl-6">
           <img src={ServiceImg} />
 
-          <div className="flex justify-end items-center mt-3 mr-12">
-            <button className="flex justify-center items-center mr-0 md:mr-[22px] z-20 text-black opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] md:text-[21px]">
-              View more 
-              <AiOutlineArrowRight className="ml-2" />
-            </button>
-          </div>
+   
         </div>
       </div>
     </div>

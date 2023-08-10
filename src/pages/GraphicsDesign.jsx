@@ -1,207 +1,216 @@
 import React from "react";
-import Lottie from "lottie-react";
-import anime from "../Lottie-data/graphics-design.json";
-import { MdOutlineBrandingWatermark } from "react-icons/md";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { GiTargetPoster } from "react-icons/gi";
-import { MdOutlinePermMedia } from "react-icons/md";
-import { BsPeople } from "react-icons/bs";
-import { BiFingerprint } from "react-icons/bi";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-import { useState } from "react";
-
-import WebDesignCard from "../Components/WebDesign";
-import PricingCard from "../Components/PricingCard";
+import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
+
+import digiMarket from "../assets/vectors/gd.png";
+import gd2 from "../assets/vectors/gd2.jpg";
+import Web from "../Components/PortfolioGallery";
+import ContactSection from "../Components/ContactSection";
 
 const GraphicsDesign = () => {
   const [openModal, setOpenModal] = useState();
 
-
-  const [toggleState, setToggleState] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
-
   return (
-    <div>
+    <div className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
       <Navbar />
-      <div className="main-bg px-6 md:px-24">
-        <div className="pt-[147px] flex flex-col md:flex-row items-center">
-          <div>
-            <h1 className="main-banner-heading mt-4 text-3xl sm:text-5xl md:text-[4.5rem] text-white font-[nexa] font-bold leading-tight  md:text-left">
-              Graphics{" "}
-              <span className="power-text mx-4 span-color bg-clip-text text-[#f58020]">
+      <div className=" pt-6 pb-32">
+        <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
+          <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              <span className="flex justify-center absolute left-44 top-[-33px]">
+                {/* <img src={shineSvt} className="w-[80px]" /> */}
+              </span>{" "}
+              Graphics <br />
+              <span
+                id="typed"
+                className="power-text span-color bg-clip-text text-[#f58020]"
+              >
                 Design
               </span>
             </h1>
 
-            <p className="leading-normal text-white opacity-75 mt-6 font-[poppins] text-base md:text-[21px] mb-8 md:text-left">
-              Unleash the power of visual communication with our exceptional
-              Graphic Design Services. From captivating brand identities to
-              stunning marketing collateral, our creative expertise brings your
-              vision to life and leaves a lasting impression on your audience.
-            </p>
-
-            <button 
-            onClick={() => {
-              setOpenModal(true);
-            }}
-            className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3">
-              Get a Quote
-            </button>
-          </div>
-
-          <div>
-            <Lottie
-              className="w-auto md:w-[660px] mt-[0px] md:mt-[-100px]"
-              animationData={anime}
-            ></Lottie>
-          </div>
-        </div>
-
-        <div className="features mt-40 h-auto section-features-wrap backdrop-blur-xl bg-white/30 block md:flex items-center px-8 md:px-24 my-4 justify-between rounded-3xl">
-          <div className="">
-            <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-white font-[nexa] font-bold leading-tight">
-              Why Choose Us
-            </h1>
-            <p className="leading-normal text-white opacity-75 mt-6 font-[poppins] text-base md:text-[21px] mb-8 md:text-center">
-              Choose us as your graphic design partner, and experience the art
-              of storytelling through visuals. Our talented team of designers
-              combines creativity with strategic thinking to deliver designs
-              that not only look great but also convey your brand's message
-              effectively.
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              Visualize Your Ideas: Our Graphic Designing Services Transform
+              Concepts into Stunning Visuals, Elevating Your Brand's Aesthetic
+              and Impact.
             </p>
           </div>
+          <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
+            <img src={digiMarket} className="w-[800px] mx-auto" />
+          </div>
         </div>
+      </div>
 
-        <div className="flex flex-col mt-40">
-          <div className="">
-            <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-white font-[nexa] font-bold leading-tight">
-              Features
+      <div className="bg-[#f69e55] rounded-[50px]">
+        <div
+          id="services"
+          className="w-full pt-30 md:pt-10 relative pb-20 px-8 md:px-24 mx-auto my-16"
+        >
+          <div className="md:w-[80%] mb-28">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              <span className="flex justify-center absolute left-56 top-[70px]"></span>
+              What makes <br />
+              Graphic Designing great
             </h1>
           </div>
-          <div className="grid grid-cols-12 gap-8 justify-center items-center">
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] mx-auto text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px]">
-                  <MdOutlineBrandingWatermark />
+
+          <div className="grid grid-cols-12">
+            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
+              <img src={gd2} className="rounded-[26px] w-[300px]" />
+
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
+                Amplify Your Brand's Reach with Our Digital Marketing Solutions!
+              </p>
+            </div>
+
+            <div className="xl:col-span-9 col-span-12">
+              <div className="grid grid-cols-12 gap-4  md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
+                <div className="opacity-100 group p-12 px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg transition-all   sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                        Striking Visual Appeal
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Great graphic design captures attention with visually
+                        compelling elements that resonate with viewers.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Custom Branding and Identity
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Tailored brand identities that reflect your unique essence
-                    and resonate with your target audience.
-                  </p>
+
+                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white  hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4 ">
+                        Clear Communication
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Effective design communicates messages concisely,
+                        conveying information effortlessly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                        Consistency and Branding
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Cohesive design elements establish a strong brand
+                        identity and build recognition.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                        Balanced Layouts
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Well-structured layouts guide the eye and create a
+                        harmonious viewing experience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                        Creativity and Innovation
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Innovative design solutions showcase originality and
+                        leave a memorable impression.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
+                  <div className="flex">
+                    <div className="">
+                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                        Emotional Connection
+                      </h1>
+                      <p className="text-[#212121]  font-[Poppins]">
+                        Successful graphic design evokes emotions, fostering a
+                        deeper connection with the audience.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
-                  <MdOutlineDesignServices />
-                </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Logo Design and Brandmarks
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Eye-catching logos and brandmarks that leave a lasting
-                    impression and establish brand recognition.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
-                  <GiTargetPoster />
-                </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Marketing Collateral Design
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Captivating designs for brochures, flyers, posters, and
-                    other marketing materials that engage and convert.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
-                  <MdOutlinePermMedia />
-                </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Web and Social Media Graphics
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Visually stunning graphics for websites, social media posts,
-                    and online advertising campaigns.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
-                  <BsPeople />
-                </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Illustrations and Infographics
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Artistic illustrations and informative infographics that
-                    simplify complex ideas and enhance engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 p-6">
-              <div className="">
-                <div className="bg-[#f58020] text-[42px] font-bold text-white w-[100px] flex justify-center items-center rounded-full h-[100px] mx-auto">
-                  <BiFingerprint />
-                </div>
-                <div className="text-center">
-                  <h1 className="text-white mt-4 md:text-[24px] opacity-75 font-[poppins] font-semibold ">
-                    Print and Packaging Design
-                  </h1>
-                  <p className="text-white opacity-75 font-[poppins]">
-                    Striking print designs and packaging solutions that elevate
-                    your products and create a memorable brand experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="flex flex-col mt-20 md:px-20">
-              <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-white font-[nexa] font-bold leading-tight">
-                Our Work
-              </h1>
-
-              <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
-                <WebDesignCard />
-              </div>
-            </div>
-
-            
           </div>
         </div>
+      </div>
 
+      <div className="grid bg-white py-8 grid-cols-12 px-8 md:px-24">
+        <div className="col-span-4 flex justify-center items-start p-6">
+          <div>
+            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              How do you measure success for digital marketing?
+            </h1>
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              Success in graphic design is measured through factors such as
+              visual impact, audience engagement, brand consistency, and
+              alignment with objectives. Analyzing design effectiveness,
+              audience feedback, and its ability to convey messages or emotions
+              gauges its resonance and contribution to overall brand perception
+              and communication goals. By assessing these metrics, we ensure
+              that our graphic design solutions deliver meaningful visual
+              experiences and achieve their intended outcomes.
+            </p>
+          </div>
+        </div>
+        <div className="col-span-4 flex justify-center items-start p-6">
+          <div>
+            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              How much money does digital marketing cost?
+            </h1>
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              The cost of digital marketing varies widely based on factors such
+              as campaign scope, industry competitiveness, chosen channels, and
+              desired outcomes. On average, small businesses might allocate
+              around $500 to $2,000 per month for basic social media and
+              entry-level SEO services. Medium-sized businesses could invest
+              $2,000 to $5,000 per month for more comprehensive strategies,
+              including PPC advertising and content marketing. Larger
+              enterprises with ambitious goals may dedicate $10,000 or more
+              monthly for multi-channel campaigns targeting a broader audience.
+              The specific budget depends on tailored strategies and the
+              expected ROI.
+            </p>
+          </div>
+        </div>
+        <div className="col-span-4 flex justify-center items-start p-6">
+          <div>
+            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              Results & Timelines in Digital Marketing.
+            </h1>
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              Understanding the Dynamics of Outcomes and Timelines in Graphic
+              Designing: A Detailed Exploration of Success Metrics, Creative
+              Evolution, and the Synchronization of Artistic Progression with
+              Project Milestones.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ContactSection />
         <Footer />
       </div>
       {openModal && (

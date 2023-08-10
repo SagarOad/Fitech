@@ -116,11 +116,11 @@ const OurServices = () => {
                 <div className="flex">
                   <div className="">
                     <h1 className="text-[#f58020] group-hover:text-white service-card- text-[24px] font-[nexa] mb-4">
-                      Software Development
+                      Video Animation
                     </h1>
                     <p className="text-[#212121] group-hover:text-white font-[Poppins]">
-                      Empower your business with our expert software development
-                      solutions
+                      Transforming ideas into captivating video animations that
+                      bring your vision to life
                     </p>
                   </div>
                 </div>

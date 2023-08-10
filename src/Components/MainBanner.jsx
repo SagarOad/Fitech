@@ -102,7 +102,7 @@ const MainBanner = () => {
                       </NavLink>
                       <NavLink to="/softwaredevelopment">
                         <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
-                          Software Development
+                          Video Animation
                         </a>
                       </NavLink>
                     </div>
@@ -110,7 +110,7 @@ const MainBanner = () => {
                 </li>
                 <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                   <a
-                    href="#projects"
+                    href="#our-work"
                     className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
                   >
                     Projects
@@ -214,12 +214,14 @@ const MainBanner = () => {
               src="https://video-previews.elements.envatousercontent.com/h264-video-previews/fcb18010-f6be-43b0-80d6-75cbee4ec03e/27659685.mp4"
             />
             <div className="flex justify-end mt-12">
-              <button className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] md:text-[19px]">
+                <a href="#our-work" className="bg-[#f58020] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] md:text-[19px]">
                 Our Work
-              </button>
+                </a>
+              <NavLink to="/about">
               <button className="bg-[#212121] mr-0 md:mr-[22px] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[18px] ml-3 md:text-[19px]">
                 About Us
               </button>
+              </NavLink>
             </div>
             {/* <img className="opacity-80 ml-auto w-[600px]" src={tech} /> */}
             {/* <Lottie className="opacity-80 ml-auto w-[700px]" animationData={AnimeData}></Lottie> */}
