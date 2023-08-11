@@ -4,10 +4,11 @@ import Navbar from "../Components/Navbar";
 import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
 
-import web1 from "../assets/vectors/webDev.png";
+import web1 from "../assets/vectors/videoAnimation.png";
 import lineArt from "../assets/vectors/Web_Services_39_.jpg";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
+import VideoAnime from "../Components/VideoAnime";
 
 const SoftwareDevelopment = () => {
   const [openModal, setOpenModal] = useState();
@@ -224,7 +225,7 @@ const SoftwareDevelopment = () => {
         <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
           Related Work
         </h1>
-        <Web />
+        <VideoAnime />
       </div>
 
       <div>

@@ -14,7 +14,7 @@ const Animation = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div id="animation" className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
       <Navbar />
       <div className=" pt-6 pb-32">
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">

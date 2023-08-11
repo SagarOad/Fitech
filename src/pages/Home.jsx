@@ -9,7 +9,6 @@ import OurServices2 from "../Components/OurServices2";
 import Pricing from "../Components/Pricing";
 import Branding from "../Components/Branding";
 import Footer from "../Components/Footer";
-import TeamSlider from "../Components/TeamSlider";
 import ProjectTabs from "../Components/ProjectTabs";
 
 const Home = () => {
@@ -24,6 +23,7 @@ const Home = () => {
       <ProjectTabs />
       <ContactSection />
       <Pricing />
+      {/* <Map /> */}
       {/* <TeamSlider /> */}
       <Footer />
     </div>
