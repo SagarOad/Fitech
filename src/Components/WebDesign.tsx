@@ -17,7 +17,7 @@ import img14 from "../assets/webdesign/laptop (13).png";
 
 const WebDesign = () => {
   return (
-    <div className="px-0 md:px-6 mb-20 mx-auto">
+    <div className="px-0 md:px-6  mx-auto">
     <section className="portfolio-section" id="portfolio">
       <div className="container-fluid">
         <div className="container  mx-auto px-2 md:px-5 py-2 lg:px-6 lg:pt-4">

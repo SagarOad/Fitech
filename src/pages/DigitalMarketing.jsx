@@ -8,12 +8,17 @@ import digiMarket from "../assets/vectors/digitalMarketing.png";
 import lineArt from "../assets/vectors/bwink_ppl_09_single_10.jpg";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
+import anime from "../Lottie-data/marketing-anime.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const ecommerce = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div id="digital-marketing" className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div
+      id="digital-marketing"
+      className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed"
+    >
       <Navbar />
       <div className=" pt-6 pb-32">
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
@@ -39,9 +44,18 @@ const ecommerce = () => {
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
-            <img src={digiMarket} className="w-[800px] mx-auto" />
+            <Player
+              src={anime}
+              className="w-[650px] mx-auto"
+              loop
+              autoplay
+            />
           </div>
         </div>
+      </div>
+
+      <div>
+        
       </div>
 
       <div className="bg-[#f69e55] rounded-[50px]">
@@ -208,7 +222,6 @@ const ecommerce = () => {
           </div>
         </div>
       </div>
-
 
       <div>
         <ContactSection />

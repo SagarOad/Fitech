@@ -102,7 +102,7 @@ const MainBanner = () => {
                       </NavLink>
                       <NavLink to="/softwaredevelopment">
                         <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
-                          Video Animation
+                          Video Editing
                         </a>
                       </NavLink>
                     </div>

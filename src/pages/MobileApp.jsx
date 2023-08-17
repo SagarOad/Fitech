@@ -46,7 +46,21 @@ const MobileApp = () => {
         </div>
       </div>
 
-      <div className="bg-[#f69e55] rounded-[50px]">
+      <div className="pt-16 bg-[#f69e55]">
+        <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
+          App Portfolio
+        </h1>
+        <Mobile />
+
+        <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
+        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
+          For complete portfolio, please don't hesitate to get in
+        </h1>
+        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
+      </div>
+      </div>
+
+      <div className="rounded-[50px]">
         <div className="w-full py-28 px-8 md:px-24 md:pr-0 mx-auto">
           <div className="md:flex mb-24">
             <div className="xl:basis-2/6">
@@ -275,12 +289,7 @@ const MobileApp = () => {
         </div>
       </div>
 
-      <div className="pt-28 ">
-        <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
-          Related Work
-        </h1>
-        <Mobile />
-      </div>
+    
 
       <div>
         <ContactSection />

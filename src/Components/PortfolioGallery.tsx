@@ -22,7 +22,7 @@ import images21 from "../assets/websites/kk.png";
 
 const PortfolioGallery = () => {
   return (
-    <div className="px-0 mb-20 mx-auto">
+    <div className="px-0  mx-auto">
       <section className="portfolio-section pb-8" id="portfolio">
         <div className="container-fluid">
         <div className="container  mx-auto px-2 md:px-5 py-2 lg:px-6 lg:pt-4">

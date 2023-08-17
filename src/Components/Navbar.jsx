@@ -20,12 +20,14 @@ const Navbar = () => {
       <nav className=" py-4 px-6 mb-6 md:px-14 mx-auto z-20">
         <div className="flex flex-wrap items-center justify-between mx-auto">
           <div className="flex justify-center">
+          <NavLink to="/">
             <a
               href="#main-banner"
               className="flex items-center cursor-pointer mr-12"
             >
               <img src={logo} className="md:w-[168px] w-[120px]" />
             </a>
+            </NavLink>
             <div
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
@@ -80,7 +82,7 @@ const Navbar = () => {
                       </NavLink>
                       <NavLink to="/softwaredevelopment">
                         <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
-                          Video Animation
+                          Video Editing
                         </a>
                       </NavLink>
                     </div>

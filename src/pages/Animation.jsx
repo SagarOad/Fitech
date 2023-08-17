@@ -14,12 +14,15 @@ const Animation = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div id="animation" className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div
+      id="animation"
+      className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed"
+    >
       <Navbar />
-      <div className=" pt-6 pb-32">
+      <div className=" pt-6 pb-16">
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
-          <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-44 top-[-33px]">
                 {/* <img src={shineSvt} className="w-[80px]" /> */}
               </span>{" "}
@@ -40,6 +43,25 @@ const Animation = () => {
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
             <img src={digiMarket} className="w-[800px] mx-auto" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="flex flex-col mt-20 md:px-20">
+          <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-black font-[nexa] font-bold leading-tight">
+            Our Work
+          </h1>
+
+          <div className="mt-6 relative rounded-3xl backdrop-blur-xl bg-white/30">
+            <Work />
+
+            <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
+        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
+          For complete portfolio, please don't hesitate to get in
+        </h1>
+        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
+      </div>
           </div>
         </div>
       </div>
@@ -207,24 +229,7 @@ const Animation = () => {
             </p>
           </div>
         </div>
-
-       
-
       </div>
-
-      <div>
-       
-       <div className="flex flex-col mt-20 md:px-20">
-             <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-black font-[nexa] font-bold leading-tight">
-               Our Work
-             </h1>
-
-             <div className="mt-6 relative rounded-3xl  backdrop-blur-xl bg-white/30">
-               <Work />
-             </div>
-           </div>
-
-         </div>
 
       <div>
         <ContactSection />

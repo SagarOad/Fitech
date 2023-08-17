@@ -28,7 +28,7 @@ const SoftwareDevelopment = () => {
                 id="typed"
                 className="power-text span-color bg-clip-text text-[#f58020]"
               >
-                Animation
+                Editing
               </span>
             </h1>
 
@@ -41,6 +41,20 @@ const SoftwareDevelopment = () => {
             <img src={web1} className="w-[600px] mx-auto" />
           </div>
         </div>
+      </div>
+
+      <div className="pt-16 pb-8 bg-white">
+        <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
+          Video Editing Portfolio
+        </h1>
+        <VideoAnime />
+
+        <div className=" my-6 w-[56%] flex p-4 ml-auto font-bold items-center">
+        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
+          For complete portfolio, please don't hesitate to get in
+        </h1>
+        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
+      </div>
       </div>
 
       <div className="bg-[#f69e55] rounded-[50px]">
@@ -219,13 +233,6 @@ const SoftwareDevelopment = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="pt-28 ">
-        <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
-          Related Work
-        </h1>
-        <VideoAnime />
       </div>
 
       <div>

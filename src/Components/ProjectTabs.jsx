@@ -88,6 +88,12 @@ const ProjectTabs = () => {
           <Animation setActiveTab={setActiveTab} />
         ) : null}
       </div>
+      <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
+        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
+          For complete portfolio, please don't hesitate to get in
+        </h1>
+        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
+      </div>
     </div>
   );
 };
