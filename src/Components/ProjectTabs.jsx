@@ -75,7 +75,7 @@ const ProjectTabs = () => {
           2d / 3d Animation
         </button>
       </div>
-      <div>
+      <div className=" h-[80vh] overflow-scroll">
         {activeTab == 0 ? (
           <GalleryWeb setActiveTab={setActiveTab} />
         ) : activeTab == 1 ? (

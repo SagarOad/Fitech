@@ -10,6 +10,7 @@ import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
 import anime from "../Lottie-data/marketing-anime.json";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Img1 from "../assets/vectors/6 (1).png"
 
 const ecommerce = () => {
   const [openModal, setOpenModal] = useState();
@@ -44,12 +45,13 @@ const ecommerce = () => {
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
-            <Player
+            {/* <Player
               src={anime}
-              className="w-[650px] mx-auto"
+              
               loop
               autoplay
-            />
+            /> */}
+            <img src={Img1} className="w-[650px] mx-auto"/>
           </div>
         </div>
       </div>

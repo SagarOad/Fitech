@@ -38,7 +38,7 @@ const SoftwareDevelopment = () => {
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
-            <img src={web1} className="w-[600px] mx-auto" />
+            <img src={web1} className="w-[600px] opacity-75 mx-auto" />
           </div>
         </div>
       </div>

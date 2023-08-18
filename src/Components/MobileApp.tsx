@@ -4,6 +4,12 @@ import img3 from "../assets/mobileapps/3 (3).png"
 import img4 from "../assets/mobileapps/4 (3).png"
 import img5 from "../assets/mobileapps/5 (3).png"
 
+import img6 from "../assets/mobApp/ip1.png"
+import img7 from "../assets/mobApp/ip2.png"
+import img8 from "../assets/mobApp/ip3.png"
+import img9 from "../assets/mobApp/ip4.png"
+import img10 from "../assets/mobApp/ip5.png"
+
 const MobileApp = () => {
   return (
     <div className="px-0 md:px-6  mx-auto">
@@ -45,6 +51,46 @@ const MobileApp = () => {
                   alt="gallery"
                   className="block w-[250px] rounded-lg object-cover object-center"
                   src={img5}
+                />
+              </div>
+
+              <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
+                <img
+                  alt="gallery"
+                  className="block w-[250px] rounded-lg object-cover object-center"
+                  src={img6}
+                />
+              </div>
+
+              <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
+                <img
+                  alt="gallery"
+                  className="block w-[250px] rounded-lg object-cover object-center"
+                  src={img7}
+                />
+              </div>
+
+              <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
+                <img
+                  alt="gallery"
+                  className="block w-[250px] rounded-lg object-cover object-center"
+                  src={img8}
+                />
+              </div>
+
+              <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
+                <img
+                  alt="gallery"
+                  className="block w-[250px] rounded-lg object-cover object-center"
+                  src={img9}
+                />
+              </div>
+
+              <div className="grayscale flex justify-center items-center hover:grayscale-0 ease-in duration-300 w-full md:w-1/3 p-1 mb-16 md:p-2">
+                <img
+                  alt="gallery"
+                  className="block w-[250px] rounded-lg object-cover object-center"
+                  src={img10}
                 />
               </div>
             </div>

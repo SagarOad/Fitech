@@ -105,6 +105,11 @@ const MainBanner = () => {
                           Video Editing
                         </a>
                       </NavLink>
+                      <NavLink to="/nftdesigning">
+                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                          Nft Designing
+                        </a>
+                      </NavLink>
                     </div>
                   </div>
                 </li>
@@ -185,11 +190,11 @@ const MainBanner = () => {
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
             <h1 className="main-banner-heading relative mt-4 mb-5 text-[5rem] sm:text-5xl md:text-[6rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              <span className="flex justify-center absolute left-44 top-[-33px]">
+              <span className="flex justify-center absolute left-60 top-[-33px]">
                 <img src={shineSvt} className="w-[80px]" />
               </span>{" "}
-              Fun <br />
-              with Tech
+              Grow <br />
+              with Our Tech
               <br />
               <span
                 id="typed"

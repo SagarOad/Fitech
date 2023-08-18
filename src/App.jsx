@@ -8,6 +8,7 @@ import Animation from "../src/pages/Animation"
 import SoftwareDevelopment from "../src/pages/SoftwareDevelopment"
 import { useRoutes } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import NftDesigning from "./pages/NftDesigning";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       { path: '/animation', element: <Animation /> },
       { path: '/graphicsdesign', element: <GraphicsDesign /> },
       { path: '/softwaredevelopment', element: <SoftwareDevelopment /> },
+      { path: '/nftdesigning', element: <NftDesigning /> },
   ]);
 
   return routes;

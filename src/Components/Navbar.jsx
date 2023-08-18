@@ -85,6 +85,11 @@ const Navbar = () => {
                           Video Editing
                         </a>
                       </NavLink>
+                      <NavLink to="/nftdesigning">
+                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                          Nft Designing
+                        </a>
+                      </NavLink>
                     </div>
                   </div>
                 </li>
