@@ -7,9 +7,9 @@ import { GiReceiveMoney } from 'react-icons/gi';
 const Branding = () => {
   return (
     <div className="bg-white rounded-t-[50px]">
-      <div className="w-full py-20  px-8 md:px-24 md:pr-0 mx-auto">
-        <div className="flex flex-col justify-between items-center md:flex-row">
-          <div>
+      <div className="w-full py-20 xl:px-24  mx-auto">
+        <div className="xl:flex flex-col justify-between items-center md:flex-row">
+          <div className='basis-4/4 mb-12 xl:mb-0 px-12 md:basis-2/4'>
           <div className="opacity-100 my-4 p-8 border-[#f58020] border-2 group shadow-md z-50 bg-white hover:shadow-lg  transition-all  xl:col-span-4 col-span-12 rounded-[26px]">
             
                 <div className="flex">
@@ -57,29 +57,30 @@ const Branding = () => {
 
            
           </div>
-          <div className="xl:basis-2/4">
-            <h1 className="main-banner-heading relative mt-4 mb-12 text-[52px] sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+          <div className="basis-4/4 md:basis-2/4 px-12">
+            <h1 className="main-banner-heading relative mt-4 mb-12 text-[52px] sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight text-center xl:text-left">
               Business
+              <br className='sm:hidden visible' />
               <span className="mx-4 span-color bg-clip-text text-[#f58020]">
                 Growth
               </span>
             </h1>
             <ul>
-              <li className="flex items-center justify-start mb-8">
+              <li className="flex items-center justify-center xl:justify-start mb-8">
                 <BsFillRocketTakeoffFill className="text-[#f58020] text-[42px] md:text-[52px]" />
-                <p className="leading-normal text-[#212121] opacity-75 ml-6 pr-20 font-sans font-medium text-[30px] md:text-[26px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-75 ml-6 px-0 md:pr-20 font-sans font-medium text-[22px] md:text-[26px] md:text-left">
                   Boosting Brands
                 </p>
               </li>
-              <li className="flex items-center justify-start mb-7">
+              <li className="flex items-center justify-center xl:justify-start mb-7">
                 <IoIosPeople className="text-[#f58020] text-[52px] md:text-[72px]"/>
-                <p className="leading-normal text-[#212121] opacity-75 ml-4 pr-20 font-sans font-medium text-[30px] md:text-[26px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-75 ml-4 px-0 md:pr-20 font-sans font-medium text-[22px] md:text-[26px] md:text-left">
                   Targeting Leads
                 </p>
               </li>
-              <li className="flex items-center justify-start mb-8">
+              <li className="flex items-center justify-center xl:justify-start mb-8">
               <GiReceiveMoney className="text-[#f58020] text-[52px] md:text-[72px]" />
-                <p className="leading-normal text-[#212121] opacity-75 ml-6 pr-20 font-sans font-medium text-[30px] md:text-[26px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-75 ml-6 px-0 md:pr-20 font-sans font-medium text-[22px] md:text-[26px] md:text-left">
                   Maximizing ROI
                 </p>
               </li>

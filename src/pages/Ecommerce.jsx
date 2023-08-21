@@ -43,17 +43,22 @@ const ecommerce = () => {
         </div>
       </div>
 
-      <div className="pt-28 ">
+      <div className="pt-28 bg-white">
         <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
-          Related Work
+          Our Web Development Portfolio
         </h1>
+        <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
+            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+              It's not our complete portfolio{" "}
+              <span className=" font-extrabold"> Explore further </span>tap the
+              button Below for More of Our Work
+            </h1>
+            <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+              Contact Us
+            </button>
+          </div>
         <Web />
-        <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
-        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
-          For complete portfolio, please don't hesitate to get in
-        </h1>
-        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
-      </div>
+       
       </div>
 
       <div className="bg-[#f69e55] rounded-[50px]">

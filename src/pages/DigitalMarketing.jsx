@@ -28,7 +28,7 @@ const ecommerce = () => {
               <span className="flex justify-center absolute left-44 top-[-33px]">
                 {/* <img src={shineSvt} className="w-[80px]" /> */}
               </span>{" "}
-              Digital <br />
+              Social Media <br />
               <span
                 id="typed"
                 className="power-text span-color bg-clip-text text-[#f58020]"
@@ -38,7 +38,7 @@ const ecommerce = () => {
             </h1>
 
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Our digital marketing services enhance your brand's visibility and
+              Our social media marketing services enhance your brand's visibility and
               engagement. With strategic campaigns, SEO, social media, and
               data-driven insights, we connect you with the right audience and
               drive tangible results in the digital world.
@@ -65,16 +65,16 @@ const ecommerce = () => {
           id="services"
           className="w-full pt-30 md:pt-10 relative pb-20 px-8 md:px-24 mx-auto my-16"
         >
-          <div className="md:w-[80%] mb-28">
-            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+          <div className="md:w-[80%] mb-12 md:mb-24 p-5">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-56 top-[70px]"></span>
-              What makes <br />
-              digital marketing great
+              What Elevates Effective  <br />
+              Social Media Marketing
             </h1>
           </div>
 
-          <div className="grid grid-cols-12">
-            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
+          <div className="grid grid-cols-12 ">
+            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mb-4 md:mb-0 md:mr-6">
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
               <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
@@ -91,7 +91,7 @@ const ecommerce = () => {
                         Strategic Approach:
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        A great digital marketing strategy is well-planned and
+                        A great social media marketing strategy is well-planned and
                         aligns with business objectives, ensuring every effort
                         serves a purpose.
                       </p>
@@ -134,7 +134,7 @@ const ecommerce = () => {
                         Multi-Channel Campaigns
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        An effective digital marketing approach utilizes various
+                        An effective social media marketing approach utilizes various
                         channels to reach a broader audience and reinforce brand
                         messaging.
                       </p>
@@ -180,10 +180,10 @@ const ecommerce = () => {
         <div className="col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How do you measure success for digital marketing?
+              How do you measure success for social media marketing?
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Success in digital marketing is gauged through key performance
+              Success in social media marketing is gauged through key performance
               indicators (KPIs) like conversion rates, ROI, website traffic,
               CTR, engagement metrics, lead generation, search engine rankings,
               social media metrics, customer retention, and cost per
@@ -197,10 +197,10 @@ const ecommerce = () => {
         <div className="col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How much money does digital marketing cost?
+              How much money does social media marketing cost?
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              The cost of digital marketing varies widely based on factors such
+              The cost of social media marketing varies widely based on factors such
               as campaign scope and objectives. On average, small businesses may
               spend $500 to $2,000 per month, medium-sized businesses may
               allocate $2,000 to $5,000, and larger enterprises may invest
@@ -215,7 +215,7 @@ const ecommerce = () => {
               Results & Timelines in Digital Marketing.
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Results from digital marketing efforts can vary. Some tactics like
+              Results from social media marketing efforts can vary. Some tactics like
               PPC and social media ads show quick results (within weeks), while
               SEO and content marketing may take longer (around 3-6 months) for
               significant impact. Consistency and optimization are vital for

@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
 
 import web1 from "../assets/vectors/Nftss.png";
-import lineArt from "../assets/vectors/Web_Services_39_.jpg";
+import web2 from "../assets/vectors/Nfts.png";
+import lineArt from "../assets/vectors/lineArt.jpg";
 import Nft from "../Components/NftGallery";
 import ContactSection from "../Components/ContactSection";
 
@@ -33,12 +34,13 @@ const NftDesigning = () => {
             </h1>
 
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Our team of skilled designers, illustrators, and digital artists
-              are well-versed in the intricacies of NFT creation. Whether you're
-              an artist looking to tokenize your artwork, a brand aiming to
-              engage your audience in innovative ways, or an individual with a
-              creative vision, our NFT Designing Services can help you realize
-              your goals.
+              We help brands become the foundation of the next phase of the
+              internet using blockchain network technology, tokens, artist NFTs,
+              Web3, and the metaverse. <br /> We build applications and marketplaces
+              that have the capability to market, create, mint, and sell NFTs
+              and other digital assets. Marketing nfts is only part of what we
+              do. We connect brands and developers with artists and design
+              experiences for digital spaces, based on market research.
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
@@ -47,128 +49,62 @@ const NftDesigning = () => {
         </div>
       </div>
 
-      <div className="pt-28 ">
+      <div className="">
         <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
           NFT Portfolio
         </h1>
-        <Nft />
-        <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
-          <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
-            For complete portfolio, please don't hesitate to get in
+
+        <div className=" my-6 flex flex-col justify-center p-4 font-bold items-center">
+          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+            It's not our complete portfolio{" "}
+            <span className=" font-extrabold"> Explore further </span>tap the
+            button Below for More of Our Work
           </h1>
-          <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
-            touch with us.
-          </h1>
+          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+            Contact Us
+          </button>
         </div>
+        <Nft />
       </div>
 
       <div className="bg-[#f69e55] rounded-[50px]">
         <div
           id="services"
-          className="w-full pt-30 md:pt-10 relative pb-20 px-8 md:px-24 mx-auto my-16"
+          className="w-full  relative py-14 px-8 md:px-24 mx-auto my-16"
         >
-          <div className="md:w-[80%] mb-28">
+          {/* <div className="md:w-[80%] mb-28">
             <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-56 top-[70px]"></span>
-              What makes a <br />
-              website great
             </h1>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-12">
             <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-                Elevate Your Online Presence with Our Web Development Services!
+              <p className="leading-normal mt-3 text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
+              Unlock Digital Treasures with NFTs!
               </p>
             </div>
 
-            <div className="xl:col-span-9 col-span-12">
-              <div className="grid grid-cols-12 gap-4  md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-                <div className="opacity-100 group p-12 px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg transition-all   sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        User-Centric Design
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Prioritize intuitive navigation and a clean interface
-                        for a seamless user experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white  hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4 ">
-                        Responsive and Mobile-Friendly
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Ensure the website adapts to all devices and screen
-                        sizes for easy access.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Compelling Visuals
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Engage visitors with captivating graphics and
-                        high-quality images.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Clear Call-to-Action:
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Prompt users to take desired actions with strategically
-                        placed CTAs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Valuable Content
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Offer informative and well-crafted content that
-                        resonates with the target audience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
-                  <div className="flex">
-                    <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Fast Loading Speed
-                      </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
-                        Optimize performance for quick access and reduced bounce
-                        rates.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div className="xl:col-span-9 col-span-12 flex flex-col justify-center">
+              <div className="2xl:mt-7.5 2xl:gap-7.5">
+                <h1 className="services2-heading mb-6 text-3xl md:text-[4.5rem] text-[white] font-[nexa] opacity-95 font-bold leading-[70px]">
+                  About NFT's
+                </h1>
+                <p className="leading-normal text-white font-sans font-medium md:text-[22px] mb-8">
+                  A non-fungible token (NFT) is a term used to describe a unique
+                  digital asset whose ownership is tracked using Blockchain
+                  technologies, such as Ethereum. Assets that can be represented
+                  as NFTs range from digital goods, such as items that exist
+                  within virtual worlds, to even physical goods authenticated on
+                  the blockchain. <br />
+                  NFT marketing will take your brand beyond influencer
+                  marketing, content marketing, media buying, email marketing,
+                  video marketing and traditional social media marketing. NFT
+                  assets connect the artist, with communities, fans, and brands
+                  with ownable digital content.
+                </p>
               </div>
             </div>
           </div>
@@ -176,48 +112,33 @@ const NftDesigning = () => {
       </div>
 
       <div className="grid bg-white py-8 grid-cols-12 px-8 md:px-24">
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How do you measure success for a website?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Web development success is assessed through a comprehensive
-              analysis of various performance metrics. These include website
-              traffic, user engagement, conversion rates, bounce rates, search
-              engine rankings, and valuable user feedback. By continuously
-              monitoring and optimizing these indicators, we ensure the
-              website's effectiveness, user satisfaction, and alignment with our
-              clients' objectives. Our data-driven approach allows us to refine
-              our web development strategies, creating a powerful online
-              presence that drives tangible business outcomes.
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              An exceptional NFT is born from a unique concept brought to life
+              with masterful artistry. Its rarity and utility create allure,
+              while its creator's story adds depth. Blockchain ensures
+              authenticity, community engagement fosters connection, and
+              innovative presentation captivates. A great NFT is timeless,
+              leaving an enduring impact on collectors and the digital
+              landscape.
             </p>
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How much money does website development cost?
-            </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Web development costs are influenced by multiple elements, such as
-              website complexity, design, functionality, content management
-              systems, and the development team's skillset. Basic informational
-              websites may range from $3,000 to $10,000, while more feature-rich
-              websites, including e-commerce or custom solutions, could cost
-              $10,000 to $50,000. Large-scale, enterprise-level projects or
-              highly customized platforms may require budgets exceeding $50,000.
-              To get precise pricing details, consulting with a web development
-              agency and sharing project specifics is crucial.
-            </p>
+            <img src={web2} className="w-[600px] mx-auto" />
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How long can it be to develop website?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
               The timeframe for web development depends on the website's
               complexity, design, functionalities, and the development team's
               expertise. A basic informational website may be completed in 1 to

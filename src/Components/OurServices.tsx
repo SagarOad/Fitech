@@ -21,7 +21,7 @@ const OurServices = () => {
       </div>
 
       <div className="grid grid-cols-12">
-        <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
+        <div className="xl:col-span-3 mb-12 xl:mb-0 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
           <img src={services} className="rounded-[26px]" />
 
           <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-[20px] md:text-[22px] mb-8 text-center">
@@ -68,10 +68,10 @@ const OurServices = () => {
                 <div className="flex">
                   <div className="">
                     <h1 className="text-[#f58020] group-hover:text-white service-card- text-[24px] font-[nexa] mb-4">
-                      Digital Marketing
+                      Social Media Marketing
                     </h1>
                     <p className="text-[#212121] group-hover:text-white font-[Poppins]">
-                      Best digital marketing solutions to take your brand to the
+                      Best social media marketing solutions to take your brand to the
                       next level
                     </p>
                   </div>

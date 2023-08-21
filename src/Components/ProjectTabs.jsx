@@ -20,10 +20,21 @@ const ProjectTabs = () => {
       <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
         Our Work
       </h1>
-      <div className="flex flex-wrap lg:justify-between md:px-4 px-0 py-4  md:mx-auto w-[100%] md:w-[50%]  shadow-lg mb-12 bg-white z-30 rounded-full">
+
+      <div className=" my-6 flex flex-col justify-center  p-4 ml-auto font-bold items-center">
+        <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+          It's not our complete portfolio{" "}
+          <span className=" font-extrabold"> Explore further </span>tap the
+          button Below for More of Our Work
+        </h1>
+        <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+          Contact Us
+        </button>
+      </div>
+      <div className="flex flex-wrap justify-evenly md:px-4 px-0 py-4 md:mx-auto w-[100%] mb-12 z-30 rounded-full">
         <button
           className={`${activeTab === 0 ? "bg-[#292A33] text-white" : ""} 
-                rounded-full py-3 px-4 m-2 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 m-2 text-[14px] lg:text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
           type="button"
           onClick={() => {
             setActiveTab(0);
@@ -33,7 +44,7 @@ const ProjectTabs = () => {
         </button>
         <button
           className={`${activeTab === 1 ? "bg-[#292A33] text-white" : ""} 
-                rounded-full py-3 px-4 m-2 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 m-2 text-[14px] lg:text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
           type="button"
           onClick={() => {
             setActiveTab(1);
@@ -44,7 +55,7 @@ const ProjectTabs = () => {
 
         <button
           className={`${activeTab === 2 ? "bg-[#292A33] text-white" : ""} 
-                rounded-full py-3 px-4 m-2 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 m-2 text-[14px] lg:text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
           type="button"
           onClick={() => {
             setActiveTab(2);
@@ -55,7 +66,7 @@ const ProjectTabs = () => {
 
         <button
           className={`${activeTab === 3 ? "bg-[#292A33] text-white" : ""} 
-                rounded-full py-3 px-4 m-2 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 m-2 text-[14px] lg:text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
           type="button"
           onClick={() => {
             setActiveTab(3);
@@ -66,7 +77,7 @@ const ProjectTabs = () => {
 
         <button
           className={`${activeTab === 4 ? "bg-[#292A33] text-white" : ""} 
-                rounded-full py-3 px-4 m-2 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 m-2 text-[14px] lg:text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
           type="button"
           onClick={() => {
             setActiveTab(4);
@@ -87,12 +98,6 @@ const ProjectTabs = () => {
         ) : activeTab == 4 ? (
           <Animation setActiveTab={setActiveTab} />
         ) : null}
-      </div>
-      <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
-        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
-          For complete portfolio, please don't hesitate to get in
-        </h1>
-        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
       </div>
     </div>
   );

@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
 
 import digiMarket from "../assets/vectors/digitalMarketing.png";
-import lineArt from "../assets/vectors/bwink_ppl_09_single_10.jpg";
+import digiMarket2 from "../assets/vectors/digitalMarketingg.png";
+import lineArt from "../assets/vectors/animee.jpg";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
 import Work from "../Components/Animation";
@@ -38,30 +39,40 @@ const Animation = () => {
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
               Our 2D/3D Animation Services Craft Captivating Visual Experiences.
               From Creative Concepts to Stunning Animation, We Turn Ideas into
-              Mesmerizing Realities.
+              Mesmerizing Realities. <br />
+              We are equally filigree working with all types of animation. All
+              of our animated assets are fully customized according to project
+              requirements.
+              <br />
+              We are proud of our portfolio of animated design production
+              services. Our game animation inhouse team uses powerful tools to
+              represent the exact nature of an animated film, cartoon, game, and
+              advertisement.
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
-            <img src={digiMarket} className="w-[800px] mx-auto" />
+            <img src={digiMarket2} className="w-[800px] mx-auto" />
           </div>
         </div>
       </div>
 
       <div>
-        <div className="flex flex-col mt-20 md:px-20">
-          <h1 className="main-banner-heading text-center mb-12 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-black font-[nexa] font-bold leading-tight">
-            Our Work
+        <div className="flex flex-col mt-20 md:px-20 pt-28 bg-white">
+          <h1 className="main-banner-heading text-center mb-6 mt-4 text-2xl sm:text-4xl md:text-[3.5rem] text-black font-[nexa] font-bold leading-tight">
+            Our Video Animation Portfolio
           </h1>
-
+          <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
+            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+              It's not our complete portfolio{" "}
+              <span className=" font-extrabold"> Explore further </span>tap the
+              button Below for More of Our Work
+            </h1>
+            <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+              Contact Us
+            </button>
+          </div>
           <div className="mt-6 relative rounded-3xl backdrop-blur-xl bg-white/30">
             <Work />
-
-            <div className=" my-6  w-[56%] flex p-4 ml-auto font-bold items-center">
-        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
-          For complete portfolio, please don't hesitate to get in
-        </h1>
-        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
-      </div>
           </div>
         </div>
       </div>
@@ -71,20 +82,20 @@ const Animation = () => {
           id="services"
           className="w-full pt-30 md:pt-10 relative pb-20 px-8 md:px-24 mx-auto my-16"
         >
-          <div className="md:w-[80%] mb-28">
-            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+          <div className="md:w-[80%] mb-12 md:mb-24 p-5">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-56 top-[70px]"></span>
-              What makes <br />
-              digital marketing great
+              What Makes 2D/3D  <br />
+              Animation Outstanding
             </h1>
           </div>
 
           <div className="grid grid-cols-12">
-            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
+            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mb-4 md:mb-0 md:mr-6">
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
               <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-                Amplify Your Brand's Reach with Our Digital Marketing Solutions!
+              Unlock the Magic of 2D/3D Animation!
               </p>
             </div>
 
@@ -94,12 +105,11 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Strategic Approach:
+                        Visual Storytelling
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        A great digital marketing strategy is well-planned and
-                        aligns with business objectives, ensuring every effort
-                        serves a purpose.
+                        Animation breathes life into narratives, making complex
+                        ideas and stories easily understandable and engaging.
                       </p>
                     </div>
                   </div>
@@ -109,11 +119,11 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4 ">
-                        Data-Driven Decision-Making
+                        Creative Freedom
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        Leveraging data and analytics allows for informed
-                        decisions, optimizing campaigns for better results.
+                        2D/3D animation offers limitless possibilities, allowing
+                        concepts to transcend reality and captivate audiences.
                       </p>
                     </div>
                   </div>
@@ -123,11 +133,11 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Personalized Content
+                        Memorable Impact:
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        Tailored content resonates with the audience, fostering
-                        meaningful connections and driving engagement.
+                        Animated visuals leave a lasting impression, enabling
+                        brand messages and concepts to linger in viewers' minds.
                       </p>
                     </div>
                   </div>
@@ -137,12 +147,12 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Multi-Channel Campaigns
+                        Versatility
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        An effective digital marketing approach utilizes various
-                        channels to reach a broader audience and reinforce brand
-                        messaging.
+                        Animation suits various contexts – from explainer videos
+                        to entertainment, delivering compelling content across
+                        platforms.
                       </p>
                     </div>
                   </div>
@@ -152,11 +162,12 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Audience Targeting
+                        Emotional Resonance:
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        Precise targeting ensures marketing efforts reach the
-                        right people, increasing the likelihood of conversion.
+                        Characters and scenes in animation evoke emotions,
+                        forging connections with audiences in ways other media
+                        can't.
                       </p>
                     </div>
                   </div>
@@ -166,12 +177,11 @@ const Animation = () => {
                   <div className="flex">
                     <div className="">
                       <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
-                        Continuous Analysis
+                        Innovative Expression
                       </h1>
                       <p className="text-[#212121]  font-[Poppins]">
-                        Regular assessment and improvement based on performance
-                        data ensure ongoing success and adaptability to trends
-                        and audience preferences.
+                        2D/3D animation allows for unique expression, enabling
+                        brands to stand out in a visually saturated landscape.
                       </p>
                     </div>
                   </div>
@@ -183,49 +193,43 @@ const Animation = () => {
       </div>
 
       <div className="grid bg-white py-8 grid-cols-12 px-8 md:px-24">
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How do you measure success for digital marketing?
+              Who we are?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Success in digital marketing is gauged through key performance
-              indicators (KPIs) like conversion rates, ROI, website traffic,
-              CTR, engagement metrics, lead generation, search engine rankings,
-              social media metrics, customer retention, and cost per
-              acquisition. Analyzing these metrics provides valuable insights
-              into the effectiveness of marketing strategies, allowing for
-              continuous optimization and achieving meaningful results in the
-              digital landscape.
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              We specialize in crafting impactful video content and animations
+              that drive marketing campaigns, captivating new audiences. Our
+              dedication to quality and creativity shines in every project, from
+              TV commercials to social media videos. With a blend of creativity
+              and technical expertise, we ensure your business goals come to
+              life. Over time, we've produced corporate videos, TV commercials,
+              documentaries, and animations for multinational clients. We're a
+              team passionate about visually stunning storytelling.
             </p>
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How much money does digital marketing cost?
-            </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              The cost of digital marketing varies widely based on factors such
-              as campaign scope and objectives. On average, small businesses may
-              spend $500 to $2,000 per month, medium-sized businesses may
-              allocate $2,000 to $5,000, and larger enterprises may invest
-              $10,000 or more for comprehensive campaigns. Specific figures
-              depend on tailored strategies and desired outcomes.
-            </p>
+            <img src={digiMarket} className="w-[600px] mx-auto" />
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              Results & Timelines in Digital Marketing.
+              Why choose us?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Results from digital marketing efforts can vary. Some tactics like
-              PPC and social media ads show quick results (within weeks), while
-              SEO and content marketing may take longer (around 3-6 months) for
-              significant impact. Consistency and optimization are vital for
-              sustained success.
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              Our team specializes in translating your message into captivating
+              visual narratives that yield tangible results. With an unwavering
+              commitment to quality, we create masterpieces across diverse
+              formats, infusing innovative creativity with technical finesse.
+              Our extensive portfolio showcases our adaptability and
+              client-centric approach, while our proven track record with
+              multinational clients reflects our ability to exceed expectations.
+              Choose us to unlock a world of passionate storytelling through
+              visually compelling content that resonates with audiences.
             </p>
           </div>
         </div>

@@ -5,39 +5,53 @@ import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
 
 import web1 from "../assets/vectors/videoAnimation.png";
-import lineArt from "../assets/vectors/Web_Services_39_.jpg";
+import web2 from "../assets/vectors/videoVector.png";
+import lineArt from "../assets/vectors/lineartVideo.jpg";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
 import VideoAnime from "../Components/VideoAnime";
+
+import cardImg1 from "../assets/vectors/videoEditing.jpg";
+import cardImg2 from "../assets/vectors/videoThumbnail.jpg";
+import cardImg3 from "../assets/vectors/verticalVideo.jpg";
 
 const SoftwareDevelopment = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div id="video-animation" className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div
+      id="video-animation"
+      className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed"
+    >
       <Navbar />
-      <div className=" pt-6 pb-32">
-        <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
+      <div className="pt-6 pb-32">
+        <div className="px-8 md:px-24 flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
-            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-4xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-44 top-[-33px]">
                 {/* <img src={shineSvt} className="w-[80px]" /> */}
               </span>{" "}
-              Video <br />
+              Video
               <span
                 id="typed"
-                className="power-text span-color bg-clip-text text-[#f58020]"
+                className="power-text ml-4 span-color bg-clip-text text-[#f58020]"
               >
                 Editing
               </span>
             </h1>
 
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Our Services Take Concepts and Transform Them into Compelling
-              Visual Stories, Adding Dynamism and Emotion to Your Message.
+            <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+              From Raw Clips to Cinematic Brilliance: Our Video Editing Service
+              Transforms Your Footage into Captivating Stories, Enriched with
+              Professional Editing, Seamless Transitions, and Artistic Flair.
+              <br />
+              Our dedicated editing team, including an account manager and
+              editor, handles your entire editing workload seamlessly. Plus,
+              your personalized project dashboard keeps everything organized and
+              secure in one convenient location.
             </p>
           </div>
-          <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
+          <div className="w-full xl:w-[50%] rounded-2xl overflow-hidden">
             <img src={web1} className="w-[600px] opacity-75 mx-auto" />
           </div>
         </div>
@@ -47,14 +61,51 @@ const SoftwareDevelopment = () => {
         <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
           Video Editing Portfolio
         </h1>
-        <VideoAnime />
+        <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
+          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+            It's not our complete portfolio{" "}
+            <span className=" font-extrabold"> Explore further </span>tap the
+            button Below for More of Our Work
+          </h1>
+          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+            Contact Us
+          </button>
+        </div>
 
-        <div className=" my-6 w-[56%] flex p-4 ml-auto font-bold items-center">
-        <h1 className="leading-normal  text-[#f58020]  font-sans font-medium text-[30px] md:text-[32px] md:text-center">
-          For complete portfolio, please don't hesitate to get in
-        </h1>
-        <h1 className="leading-normal ml-2 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">touch with us.</h1>
+        <VideoAnime />
       </div>
+
+      <div className="py-6">
+        <div className="px-8 md:px-24 flex flex-wrap flex-col md:flex-row items-center">
+          <div className="w-full xl:w-[50%] rounded-2xl overflow-hidden">
+            <img
+              src={web2}
+              className="md:w-[800px] opacity-75 mx-0 md:mx-auto"
+            />
+          </div>
+          <div className="flex flex-col w-full xl:w-[50%] justify-center lg:items-start ">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-4xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+              <span className="flex justify-center absolute left-44 top-[-33px]">
+                {/* <img src={shineSvt} className="w-[80px]" /> */}
+              </span>{" "}
+              How unlimited is
+              <span
+                id="typed"
+                className="power-text ml-4 span-color bg-clip-text text-[#f58020]"
+              >
+                "unlimited"
+              </span>
+            </h1>
+
+            <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] md:text-left">
+              There's no cap on the number of video projects you can send our
+              way. Our plan offers limitless revisions, ensuring your
+              satisfaction. Your dedicated editor focuses on one video at a
+              time, ensuring swift turnaround and a quality outcome, minus
+              unnecessary delays from excessive revisions.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="bg-[#f69e55] rounded-[50px]">
@@ -62,8 +113,8 @@ const SoftwareDevelopment = () => {
           id="services"
           className="w-full pt-30 md:pt-10 relative pb-20 px-8 md:px-24 mx-auto my-16"
         >
-          <div className="md:w-[80%] mb-28">
-            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
+          <div className="md:w-[80%] mb-12 md:mb-24 p-5">
+            <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[5rem] text-[#212121] font-[nexa] font-bold leading-tight md:text-left">
               <span className="flex justify-center absolute left-56 top-[70px]"></span>
               What makes a <br />
               video great
@@ -71,11 +122,11 @@ const SoftwareDevelopment = () => {
           </div>
 
           <div className="grid grid-cols-12">
-            <div className="xl:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mr-6">
+            <div className="lg:col-span-3 flex flex-col justify-center items-center col-span-12 p-4 bg-white rounded-[26px] mb-4 md:mb-0 md:mr-6">
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-                Elevate Your Online Presence with Our Web Development Services!
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-4">
+                Transforming Footage into Stories!
               </p>
             </div>
 
@@ -108,7 +159,7 @@ const SoftwareDevelopment = () => {
                         visual experience.
                       </p>
                     </div>
-                  </div>/
+                  </div>
                 </div>
 
                 <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[20px]">
@@ -177,64 +228,144 @@ const SoftwareDevelopment = () => {
       </div>
 
       <div className="grid bg-white py-8 grid-cols-12 px-8 md:px-24">
-        <div className="col-span-4 flex justify-center items-start p-6">
-          <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How do you measure success for a website?
+        <div className="col-span-12 lg:col-span-4 md:m-8">
+          <div className="shadow-lg transition-all hover:scale-105 rounded-[24px]">
+            <h1 className="services2-heading text-center m-4 mb-6 text-2xl md:text-[2.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
+              Video Editing
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Web development success is assessed through a comprehensive
-              analysis of various performance metrics. These include website
-              traffic, user engagement, conversion rates, bounce rates, search
-              engine rankings, and valuable user feedback. By continuously
-              monitoring and optimizing these indicators, we ensure the
-              website's effectiveness, user satisfaction, and alignment with our
-              clients' objectives. Our data-driven approach allows us to refine
-              our web development strategies, creating a powerful online
-              presence that drives tangible business outcomes.
-            </p>
+            <div className="h-[200px] w-full">
+              <img src={cardImg1} className="object-cover w-full h-full" />
+            </div>
+
+            <div className="h-auto flex flex-col p-12 justify-between">
+              <p className="text-center mb-6">
+                Unleash Creativity through Expert Video Editing. Elevate Your
+                Visuals, Captivate Your Audience.
+              </p>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                  className="bg-[#f58020] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[18px]"
+                >
+                  Contact Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
-          <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How much money does website development cost?
+
+        <div className="col-span-12 lg:col-span-4 md:m-8">
+          <div className="shadow-lg transition-all hover:scale-105 rounded-[24px]">
+            <h1 className="services2-heading text-center m-4 mb-6 text-2xl md:text-[2.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
+              Thumbnails
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Web development costs are influenced by multiple elements, such as
-              website complexity, design, functionality, content management
-              systems, and the development team's skillset. Basic informational
-              websites may range from $3,000 to $10,000, while more feature-rich
-              websites, including e-commerce or custom solutions, could cost
-              $10,000 to $50,000. Large-scale, enterprise-level projects or
-              highly customized platforms may require budgets exceeding $50,000.
-              To get precise pricing details, consulting with a web development
-              agency and sharing project specifics is crucial.
-            </p>
+            <div className="h-[200px] w-full">
+              <img src={cardImg2} className="object-cover w-full h-full" />
+            </div>
+
+            <div className="h-auto flex flex-col p-12 justify-between">
+              <p className="text-center mb-6">
+                "Instant Allure: Expert Thumbnail Design. Click-Worthy Visuals
+                for Unforgettable Content.
+              </p>
+
+              <div className="flex justify-center">
+                <button
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                  className="bg-[#f58020] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[18px]"
+                >
+                  Contact Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
-          <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How long can it be to develop website?
+
+        <div className="col-span-12 transition-all hover:scale-105 lg:col-span-4 md:m-8">
+          <div className="shadow-lg rounded-[24px]">
+            <h1 className="services2-heading text-center m-4 mb-6 text-2xl md:text-[2.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
+              Verticals
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              The timeframe for web development depends on the website's
-              complexity, design, functionalities, and the development team's
-              expertise. A basic informational website may be completed in 1 to
-              2 months. More complex websites, such as e-commerce platforms or
-              custom solutions, may take 2 to 6 months to develop. Large-scale
-              projects or highly customized platforms may require 6 months to a
-              year or more. The development team's efficiency and collaboration
-              with clients play a vital role in meeting project timelines. By
-              discussing your specific needs with a web development agency, you
-              can receive a more accurate estimate for your project's
-              completion.
-            </p>
+            <div className="h-[200px] w-full">
+              <img src={cardImg3} className="object-cover w-full h-full" />
+            </div>
+
+            <div className="h-auto flex flex-col p-12 justify-between">
+              <p className="text-center mb-6">
+                Elevate Your Brand with Vertical Videos: Tailored for Niche
+                Impact.
+              </p>
+
+              <div className="flex justify-center">
+                <button
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                  className="bg-[#f58020] z-20 text-white opacity-75 md:py-3 py-2 md:px-5 px-3 rounded-full font-sans font-medium text-[12px] md:text-[18px]"
+                >
+                  Contact Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <div className="px-8 xl:px-24 py-14">
+        <h1 className="services2-heading text-center mb-6 xl:mb-12 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[48px]">
+          How Does this Work?
+        </h1>
+        <div className="grid grid-cols-12">
+          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
+                Step 1
+              </h1>
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Gather your footage and project details. Our team carefully
+                examines your content's potential.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
+                Step 2
+              </h1>
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                We weave magic into your footage, enhancing visuals, refining
+                audio, and building a coherent narrative.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
+                Step 3
+              </h1>
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Fine-tune transitions, color correction, and effects to achieve
+                a polished, professional look.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
+                Step 4
+              </h1>
+              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Receive your masterpiece. Our final touch ensures your video
+                shines across platforms, captivating your audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <ContactSection />
         <Footer />
