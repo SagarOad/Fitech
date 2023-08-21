@@ -87,7 +87,7 @@ const MainBanner = () => {
                       </NavLink>
                       <NavLink to="/digitalmarketing">
                         <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
-                          Digital Marketing
+                          Social Media Marketing
                         </a>
                       </NavLink>
                       <NavLink to="/animation">
