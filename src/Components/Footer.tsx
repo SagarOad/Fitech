@@ -1,6 +1,7 @@
 import Logo from ".././assets/fame-itech-png.png";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -35,12 +36,14 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="md:pl-[3.5rem] py-2 md:py-0 md:border-0 border-t-2 border-white md:text-end">
+                    <NavLink to="/about">
                     <a
                       href="#pricing"
                       className="text-[#212121] hover:text-[#f58020] font-sans font-bold text-[18px] md:text-[18px]"
                     >
                       About
                     </a>
+                    </NavLink>
                   </li>
                   <li className="md:pl-[3.5rem] py-2 md:py-0 md:border-0 border-t-2 border-white md:text-end">
                     <a

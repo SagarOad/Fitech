@@ -2,6 +2,8 @@ import React from "react";
 import Lottie from "lottie-react";
 import anime from "../Lottie-data/about.json";
 import newAnime from "../Lottie-data/animation_lkqlk372.json";
+import { useState, useEffect } from "react";
+import GetQuote from "../Components/GetQuote";
 import { MdOutlineSentimentSatisfiedAlt } from "react-icons/md";
 import { AiOutlineBulb } from "react-icons/ai";
 import { GiElectric } from "react-icons/gi";
@@ -9,6 +11,9 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const AboutUs = () => {
+
+  const [openModal, setOpenModal] = useState();
+
   return (
     
     <div>
@@ -33,7 +38,7 @@ const AboutUs = () => {
             </p>
 
             <button
-              onClick={() => {
+               onClick={() => {
                 setOpenModal(true);
               }}
               className="bg-[#f58020] text-white text-[21px] rounded-lg font-[poppins] px-6 py-3"
@@ -140,6 +145,10 @@ const AboutUs = () => {
         </div>
         <Footer />
       </div>
+
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

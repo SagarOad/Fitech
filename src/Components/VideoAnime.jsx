@@ -58,6 +58,56 @@ const VideoAnime = () => {
                     src="https://fameitech.com/video_animations/videos/50_Formation_211122.mp4"
                   />
                 </div>
+                <div className=" w-1/3 p-1 md:p-2">
+                <video
+                   loop
+                   autoPlay
+                   muted
+                  
+                    className="block h-full w-full rounded-lg object-cover object-center "
+                    src="https://fameitech.com/video_animations/videos/recent1.mp4"
+                  />
+                </div>
+                <div className=" w-1/3 p-1 md:p-2">
+                <video
+                   loop
+                   autoPlay
+                   muted
+                  
+                    className="block h-full w-full rounded-lg object-cover object-center "
+                    src="https://fameitech.com/video_animations/videos/recent2.mp4"
+                  />
+                </div>
+                <div className=" w-1/3 p-1 md:p-2">
+                <video
+                   loop
+                   autoPlay
+                   muted
+                  
+                    className="block h-full w-full rounded-lg object-cover object-center "
+                    src="https://fameitech.com/video_animations/videos/recent3.mp4"
+                  />
+                </div>
+                <div className=" w-1/3 p-1 md:p-2">
+                <video
+                   loop
+                   autoPlay
+                   muted
+                  
+                    className="block h-full w-full rounded-lg object-cover object-center "
+                    src="https://fameitech.com/video_animations/videos/recent4.mp4"
+                  />
+                </div>
+                <div className=" w-1/3 p-1 md:p-2">
+                <video
+                   loop
+                   autoPlay
+                   muted
+                  
+                    className="block h-full w-full rounded-lg object-cover object-center "
+                    src="https://fameitech.com/video_animations/videos/recent5.mp4"
+                  />
+                </div>
               </div>
               </div>
             </div>

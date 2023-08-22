@@ -78,7 +78,7 @@ const ecommerce = () => {
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
               <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-                Amplify Your Brand's Reach with Our Digital Marketing Solutions!
+                Amplify Your Brand's Reach with Our Social Media Marketing Solutions!
               </p>
             </div>
 
@@ -212,7 +212,7 @@ const ecommerce = () => {
         <div className="col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              Results & Timelines in Digital Marketing.
+              Results & Timelines in Social Media Marketing.
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
               Results from social media marketing efforts can vary. Some tactics like

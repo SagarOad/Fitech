@@ -6,6 +6,7 @@ import GetQuote from "../Components/GetQuote";
 
 import digiMarket from "../assets/vectors/gd.png";
 import gd2 from "../assets/vectors/gd2.jpg";
+import grphics from "../assets/vectors/graphics1.png";
 import Web from "../Components/PortfolioGallery";
 import ContactSection from "../Components/ContactSection";
 
@@ -13,7 +14,10 @@ const GraphicsDesign = () => {
   const [openModal, setOpenModal] = useState();
 
   return (
-    <div id="graphics-designing" className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div
+      id="graphics-designing"
+      className="bg-[#F8F6F2] leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed"
+    >
       <Navbar />
       <div className=" pt-6 pb-32">
         <div className="px-8 md:px-24  flex flex-wrap flex-col md:flex-row items-center">
@@ -61,7 +65,7 @@ const GraphicsDesign = () => {
               <img src={gd2} className="rounded-[26px] w-[300px]" />
 
               <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-                Amplify Your Brand's Reach with Our Digital Marketing Solutions!
+                Turning Visions into Visuals
               </p>
             </div>
 
@@ -140,10 +144,10 @@ const GraphicsDesign = () => {
                 <div className="opacity-100 p-12 group px-5 py-7 pb-5 shadow-md z-50 bg-white hover:shadow-lg  transition-all  hover: sm:px-7.5 xl:col-span-4 col-span-12 rounded-[26px]">
                   <div className="flex">
                     <div className="">
-                      <h1 className="text-[#f58020]  service-card- text-[24px] font-[nexa] mb-4">
+                      <h1 className="text-[#f58020] service-card- text-[24px] font-[nexa] mb-4">
                         Emotional Connection
                       </h1>
-                      <p className="text-[#212121]  font-[Poppins]">
+                      <p className="text-[#212121] font-[Poppins]">
                         Successful graphic design evokes emotions, fostering a
                         deeper connection with the audience.
                       </p>
@@ -160,50 +164,41 @@ const GraphicsDesign = () => {
         <div className="col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How do you measure success for digital marketing?
+              What Defines a Great Graphic Design?
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Success in graphic design is measured through factors such as
-              visual impact, audience engagement, brand consistency, and
-              alignment with objectives. Analyzing design effectiveness,
-              audience feedback, and its ability to convey messages or emotions
-              gauges its resonance and contribution to overall brand perception
-              and communication goals. By assessing these metrics, we ensure
-              that our graphic design solutions deliver meaningful visual
-              experiences and achieve their intended outcomes.
+              A great graphic design transcends aesthetics, weaving a tale of
+              visual brilliance that captivates and communicates effortlessly.
+              It is a harmonious fusion of creativity, purpose, and precision
+              that elevates your message beyond words. From captivating imagery
+              and thoughtfully chosen colors to seamless layouts, every element
+              is meticulously crafted to resonate with your audience. A great
+              graphic design leaves an indelible mark, etching your brand's
+              identity into the hearts and minds of those who engage with it.
+              It's the symphony of creativity and functionality that transforms
+              mere visuals into a powerful means of connection and expression.
             </p>
+          </div>
+        </div>
+        <div className="col-span-4 flex justify-center items-start p-6">
+        <div>
+            <img src={grphics} className="w-[600px] mx-auto" />
           </div>
         </div>
         <div className="col-span-4 flex justify-center items-start p-6">
           <div>
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              How much money does digital marketing cost?
+              Project Milestones in Graphic Design.
             </h1>
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              The cost of digital marketing varies widely based on factors such
-              as campaign scope, industry competitiveness, chosen channels, and
-              desired outcomes. On average, small businesses might allocate
-              around $500 to $2,000 per month for basic social media and
-              entry-level SEO services. Medium-sized businesses could invest
-              $2,000 to $5,000 per month for more comprehensive strategies,
-              including PPC advertising and content marketing. Larger
-              enterprises with ambitious goals may dedicate $10,000 or more
-              monthly for multi-channel campaigns targeting a broader audience.
-              The specific budget depends on tailored strategies and the
-              expected ROI.
-            </p>
-          </div>
-        </div>
-        <div className="col-span-4 flex justify-center items-start p-6">
-          <div>
-            <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
-              Results & Timelines in Digital Marketing.
-            </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-              Understanding the Dynamics of Outcomes and Timelines in Graphic
-              Designing: A Detailed Exploration of Success Metrics, Creative
-              Evolution, and the Synchronization of Artistic Progression with
-              Project Milestones.
+              Translating your vision into captivating visuals involves a
+              strategic journey that we meticulously navigate. Our deliverables
+              encompass tailored designs crafted to reflect your brand's
+              essence, while our project milestones ensure timely execution with
+              precision. With every project, we embark on a collaborative
+              venture, crafting designs that align with your objectives and
+              adhering to timelines that bring your ideas to life in the most
+              efficient and impressive manner.
             </p>
           </div>
         </div>
