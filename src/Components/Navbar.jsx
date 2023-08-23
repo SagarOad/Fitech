@@ -38,6 +38,15 @@ const Navbar = () => {
                 <li className="py-2 pl-[2rem] md:py-0 md:border-0 border-t-2 border-white text-end">
                   <div className="group relative cursor-pointer">
                     <div>
+                    <NavLink to="/"
+                     onClick={(event) => {
+                      event.preventDefault(); // Prevent default link behavior
+                      const servicesSection = document.getElementById('services');
+                      if (servicesSection) {
+                        servicesSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    >
                       <a
                         data-dropdown-toggle="dropdownHover"
                         data-dropdown-trigger="hover"
@@ -49,44 +58,45 @@ const Navbar = () => {
                       >
                         Services
                       </a>
+                      </NavLink>
                     </div>
                     <div
                       className={`${
                         isDropdownVisible ? "block" : "hidden"
-                      } invisible md:visible w-64 absolute z-50 flex font-sans font-medium flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl`}
+                      } invisible md:visible w-64 absolute z-50 flex font-sans font-medium flex-col bg-gray-100 py-1 text-gray-800 shadow-xl`}
                     >
                       <NavLink to="/servicepage">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left  hover:text-white md:mx-2">
                           Mobile Application
                         </a>
                       </NavLink>
                       <NavLink to="/ecommerce">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           Web Development
                         </a>
                       </NavLink>
                       <NavLink to="/digitalmarketing">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           Social Media Marketing
                         </a>
                       </NavLink>
                       <NavLink to="/animation">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           2D / 3D Animation
                         </a>
                       </NavLink>
                       <NavLink to="/graphicsdesign">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           Graphics Design
                         </a>
                       </NavLink>
                       <NavLink to="/softwaredevelopment">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           Video Editing
                         </a>
                       </NavLink>
                       <NavLink to="/nftdesigning">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-medium text-gray-500 hover:text-[#f58020] md:mx-2">
+                        <a className="my-2 block border-b border-gray-100 font-medium text-gray-500 px-4 py-2 hover:bg-[#f58020] text-left hover:text-white md:mx-2">
                           Nft Designing
                         </a>
                       </NavLink>

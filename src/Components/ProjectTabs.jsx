@@ -5,7 +5,7 @@ import WebDesign from "../Components/WebDesign";
 import LogoDesign from "../Components/LogoDesign";
 import MobileApp from "../Components/MobileApp";
 import Animation from "../Components/Animation";
-
+import GetQuote from "./GetQuote";
 const ProjectTabs = () => {
   // const initialTab = <GalleryWeb />;
   // const secondTab = <WebDesign />;
@@ -14,7 +14,7 @@ const ProjectTabs = () => {
   // const fifthTab = <Animation />;
 
   const [activeTab, setActiveTab] = useState(0);
-
+  const [openModal, setOpenModal] = useState();
   return (
     <div className=" px-8" id="our-work">
       <h1 className="services2-heading text-center mb-6 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
@@ -22,12 +22,16 @@ const ProjectTabs = () => {
       </h1>
 
       <div className=" my-6 flex flex-col justify-center  p-4 ml-auto font-bold items-center">
-        <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+        <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
           It's not our complete portfolio{" "}
           <span className=" font-extrabold"> Explore further </span>tap the
           button Below for More of Our Work
         </h1>
-        <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+        <button 
+        onClick={() => {
+          setOpenModal(true);
+        }}
+        className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
           Contact Us
         </button>
       </div>
@@ -99,6 +103,9 @@ const ProjectTabs = () => {
           <Animation setActiveTab={setActiveTab} />
         ) : null}
       </div>
+      {openModal && (
+        <GetQuote closeModal={setOpenModal} Title="Request a Quote" />
+      )}
     </div>
   );
 };

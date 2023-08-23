@@ -48,12 +48,16 @@ const ecommerce = () => {
           Our Web Development Portfolio
         </h1>
         <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
-            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
               It's not our complete portfolio{" "}
               <span className=" font-extrabold"> Explore further </span>tap the
               button Below for More of Our Work
             </h1>
-            <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+            <button
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
               Contact Us
             </button>
           </div>
@@ -180,7 +184,7 @@ const ecommerce = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How do you measure success for a website?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Web development success is assessed through a comprehensive
               analysis of various performance metrics. These include website
               traffic, user engagement, conversion rates, bounce rates, search
@@ -198,7 +202,7 @@ const ecommerce = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How much money does website development cost?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Web development costs are influenced by multiple elements, such as
               website complexity, design, functionality, content management
               systems, and the development team's skillset. Basic informational

@@ -9,6 +9,7 @@ import SoftwareDevelopment from "../src/pages/SoftwareDevelopment"
 import { useRoutes } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import NftDesigning from "./pages/NftDesigning";
+import ScrollToTop from "./ScrollToTop";
 
 
 const App = () => {
@@ -24,7 +25,12 @@ const App = () => {
       { path: '/nftdesigning', element: <NftDesigning /> },
   ]);
 
-  return routes;
+  return (
+    <>
+  <ScrollToTop />
+    {routes}
+    </>
+  ) 
 };
 
 export default App;

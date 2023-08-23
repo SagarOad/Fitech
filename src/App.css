@@ -457,6 +457,8 @@ body {
   transform: translateY(0);
 }
 
+/* Promblem */
+
 form {
   margin: 50px auto 0;
   width: 300px;
@@ -664,7 +666,6 @@ form .button {
 
 html,
 body {
-  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -672,7 +673,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: ;
 }
 
 .icon {
@@ -682,6 +683,9 @@ body {
   height: 20px;
   width: 20px;
 }
+
+
+/* Problem End */
 
 img {
   pointer-events: none;

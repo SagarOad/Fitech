@@ -40,14 +40,14 @@ const Animation = () => {
               Our 2D/3D Animation Services Craft Captivating Visual Experiences.
               From Creative Concepts to Stunning Animation, We Turn Ideas into
               Mesmerizing Realities. <br />
-              We are equally filigree working with all types of animation. All
+              {/* We are equally filigree working with all types of animation. All
               of our animated assets are fully customized according to project
               requirements.
               <br />
               We are proud of our portfolio of animated design production
               services. Our game animation inhouse team uses powerful tools to
               represent the exact nature of an animated film, cartoon, game, and
-              advertisement.
+              advertisement. */}
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
@@ -62,12 +62,16 @@ const Animation = () => {
             Our Video Animation Portfolio
           </h1>
           <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
-            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+            <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
               It's not our complete portfolio{" "}
               <span className=" font-extrabold"> Explore further </span>tap the
               button Below for More of Our Work
             </h1>
-            <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+            <button
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
               Contact Us
             </button>
           </div>
@@ -85,9 +89,15 @@ const Animation = () => {
           <div className="md:w-[80%] mb-12 md:mb-24 p-5">
             <h1 className="main-banner-heading relative mt-4 mb-5 text-3xl sm:text-5xl md:text-[4rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-56 top-[70px]"></span>
-              What Makes 2D/3D  <br />
+              What Makes 2D/3D <br />
               Animation Outstanding
             </h1>
+
+            <p className="text-white text-[22px]  font-[Poppins]">
+              Our game animation inhouse team uses powerful tools to represent
+              the exact nature of an animated film, cartoon, game, and
+              advertisement.
+            </p>
           </div>
 
           <div className="grid grid-cols-12">
@@ -95,7 +105,7 @@ const Animation = () => {
               <img src={lineArt} className="rounded-[26px] w-[300px]" />
 
               <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium md:text-[22px] mb-8 text-center">
-              Unlock the Magic of 2D/3D Animation!
+                Unlock the Magic of 2D/3D Animation!
               </p>
             </div>
 
@@ -198,7 +208,7 @@ const Animation = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               Who we are?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               We specialize in crafting impactful video content and animations
               that drive marketing campaigns, captivating new audiences. Our
               dedication to quality and creativity shines in every project, from
@@ -220,7 +230,7 @@ const Animation = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               Why choose us?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Our team specializes in translating your message into captivating
               visual narratives that yield tangible results. With an unwavering
               commitment to quality, we create masterpieces across diverse

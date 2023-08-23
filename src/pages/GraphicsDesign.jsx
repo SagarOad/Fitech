@@ -166,7 +166,7 @@ const GraphicsDesign = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               What Defines a Great Graphic Design?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               A great graphic design transcends aesthetics, weaving a tale of
               visual brilliance that captivates and communicates effortlessly.
               It is a harmonious fusion of creativity, purpose, and precision
@@ -190,7 +190,7 @@ const GraphicsDesign = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               Project Milestones in Graphic Design.
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Translating your vision into captivating visuals involves a
               strategic journey that we meticulously navigate. Our deliverables
               encompass tailored designs crafted to reflect your brand's

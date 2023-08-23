@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import GetQuote from "../Components/GetQuote";
 
 import mobApp from "../assets/vectors/mobileDev.png";
-import growth from "../assets/vectors/growth.jpg";
-import mob1 from "../assets/mobileapps/1 (4).png";
-import mob2 from "../assets/mobileapps/2 (5).png";
+// import growth from "../assets/vectors/growth.jpg";
+// import mob1 from "../assets/mobileapps/1 (4).png";
+// import mob2 from "../assets/mobileapps/2 (5).png";np
 import mob3 from "../assets/vectors/3dAnime.png";
 import newMob from "../assets/vectors/newMob.png";
 import Mobile from "../Components/MobileApp";
@@ -61,12 +61,12 @@ const MobileApp = () => {
           App Portfolio
         </h1>
         <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
-          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
             It's not our complete portfolio{" "}
             <span className=" font-extrabold"> Explore further </span>tap the
             button Below for More of Our Work
           </h1>
-          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
             Contact Us
           </button>
         </div>
@@ -134,15 +134,16 @@ const MobileApp = () => {
 
 
       <div className="py-24 relative">
-        <div className="px-8 md:px-24 flex flex-wrap flex-col md:flex-row items-center">
-          <div className="w-full basis-2/6 rounded-2xl overflow-hidden">
+        <div className="px-8 md:px-24 xl:flex flex-wrap flex-col md:flex-row items-center">
+          <div className="w-full basis-2/6 ml-[-100px] xl:ml-[0px] rounded-2xl overflow-hidden">
             <img
               src={mob3}
-              className="md:w-[700px] absolute top-28 left-0 opacity-75 mx-0"
+              className="md:w-[700px] xl:absolute top-28 left-0 opacity-75 mx-0"
             />
           </div>
 
           <div className="flex basis-4/6 flex-col w-full justify-center lg:items-start ">
+            <div className="xl:ml-32">
             <h1 className="main-banner-heading relative mb-5 text-3xl md:text-[3rem] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               <span className="flex justify-center absolute left-44 top-[-33px]"></span>{" "}
               Crafting Mobile Experiences That
@@ -161,8 +162,8 @@ const MobileApp = () => {
             </p>
 
             <div className="pr-0 xl:pr-40">
-              <div className="flex  items-center mt-12">
-                <div className="border-2 py-6 px-8 rounded-full mr-12">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mt-12">
+                <div className="border-2 mb-5 sm:mb-0 py-6 px-8 rounded-full mr-12">
                   <h1 className="text-[24px]">01</h1>
                 </div>
                 <div>
@@ -176,8 +177,8 @@ const MobileApp = () => {
                 </div>
               </div>
 
-              <div className="flex items-center mt-8">
-                <div className="border-2 py-6 px-8 rounded-full mr-12">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mt-12">
+                <div className="border-2 mb-5 sm:mb-0 py-6 px-8 rounded-full mr-12">
                   <h1 className="text-[24px]">02</h1>
                 </div>
                 <div>
@@ -191,6 +192,7 @@ const MobileApp = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -203,97 +205,97 @@ const MobileApp = () => {
           Elevating Mobile App Development Through a Streamlined Journey
         </p>
         <div className="grid grid-cols-12">
-          <div className="col-span-4 flex flex-col justify-evenly items-center">
-            <div className="flex items-center">
+          <div className="col-span-12 lg:col-span-4 flex flex-col justify-evenly items-center">
+            <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row items-center">
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-right">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Conceptualization
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-right">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Clarify objectives, target audience, and features to outline
                   the app's core concept.
                 </p>
               </div>
-              <div className="border-2 py-6 px-8 rounded-full ml-8">
-                <h1 className="text-[24px]">02</h1>
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
+                <h1 className="text-[24px]">01</h1>
               </div>
             </div>
 
-            <div className="flex items-center mt-8">
+            <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row items-center mt-6 md:mt-0">
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-right">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Design & Prototyping
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-right">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Create wireframes and interactive prototypes to map out the
                   app's layout and functionalities.
                 </p>
               </div>
-              <div className="border-2 py-6 px-8 rounded-full ml-8">
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
                 <h1 className="text-[24px]">02</h1>
               </div>
             </div>
 
-            <div className="flex items-center mt-8">
+            <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row items-center mt-6 md:mt-0">
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-right">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Development & Coding
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-right">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Convert designs into functional code while adhering to best
                   practices and coding standards.
                 </p>
               </div>
-              <div className="border-2 py-6 px-8 rounded-full ml-8">
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
                 <h1 className="text-[24px]">02</h1>
               </div>
             </div>
           </div>
 
-          <div className="col-span-4 flex justify-center items-center">
+          <div className="col-span-12 lg:col-span-4 flex justify-center items-center">
             <img src={newMob} className=" w-[500px]" />
           </div>
 
-          <div className="col-span-4 flex flex-col justify-evenly items-center">
-            <div className="flex items-center">
-              <div className="border-2 py-6 px-8 rounded-full mr-8">
+          <div className="col-span-12 lg:col-span-4 flex flex-col justify-evenly items-center">
+            <div className="flex lg:flex-row-reverse flex-col items-center mt-6 md:mt-0">
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
                 <h1 className="text-[24px]">02</h1>
               </div>
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-left">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Testing & Quality Assurance
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Rigorously test the app for performance, security, and
                   usability to ensure a seamless user experience.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center mt-8">
-              <div className="border-2 py-6 px-8 rounded-full mr-8">
+            <div className="flex lg:flex-row-reverse flex-col items-center mt-6 md:mt-0">
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
                 <h1 className="text-[24px]">02</h1>
               </div>
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-left">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Deployment & Launch
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Prepare and deploy the app to app stores, ensuring a smooth
                   launch and availability to users.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center mt-8">
-              <div className="border-2 py-6 px-8 rounded-full mr-8">
+            <div className="flex lg:flex-row-reverse flex-col items-center mt-6 md:mt-0">
+              <div className="border-2 py-6 px-8 mb-3 md:mb-0 rounded-full lg:ml-8 md:mr-8 ld:mr-0">
                 <h1 className="text-[24px]">02</h1>
               </div>
               <div>
-                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] md:text-left">
+                <h2 className="leading-normal text-[#212121] mb-2 opacity-75 font-sans font-bold text-base md:text-[22px] text-center lg:text-right">
                   Ongoing Support & Maintenance
                 </h2>
-                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] md:text-left">
+                <p className="leading-normal text-[#212121] opacity-60 font-sans font-medium text-base md:text-[18px] text-center lg:text-right">
                   Provide continuous support, updates, and enhancements to keep
                   the app optimized and up-to-date.
                 </p>
@@ -310,7 +312,7 @@ const MobileApp = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 text-[22px] md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How do you measure success for a mobile app?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Success for a mobile app is measured by key performance indicators
               (KPIs) like user engagement, retention rates, downloads, and
               conversions. User feedback and reviews also provide insights for
@@ -324,7 +326,7 @@ const MobileApp = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 text-[22px] md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How much money does an mobile app development cost?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               The cost of an explainer video varies based on factors like video
               length, animation complexity, customization, and the production
               company's expertise. It can range from low-budget options (around
@@ -341,7 +343,7 @@ const MobileApp = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 text-[22px] md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How long can it be to develop an mobile app?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 md:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               The development time for a mobile app varies based on its
               complexity and features. Simple apps may take 2 to 4 months,
               moderately complex apps 4 to 6 months, and highly complex apps 6

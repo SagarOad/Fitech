@@ -44,11 +44,8 @@ const SoftwareDevelopment = () => {
               From Raw Clips to Cinematic Brilliance: Our Video Editing Service
               Transforms Your Footage into Captivating Stories, Enriched with
               Professional Editing, Seamless Transitions, and Artistic Flair.
-              <br />
-              Our dedicated editing team, including an account manager and
-              editor, handles your entire editing workload seamlessly. Plus,
-              your personalized project dashboard keeps everything organized and
-              secure in one convenient location.
+              {/* <br />
+               */}
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl overflow-hidden">
@@ -62,12 +59,16 @@ const SoftwareDevelopment = () => {
           Video Editing Portfolio
         </h1>
         <div className=" my-6 flex flex-col justify-center  p-4  font-bold items-center">
-          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
             It's not our complete portfolio{" "}
             <span className=" font-extrabold"> Explore further </span>tap the
             button Below for More of Our Work
           </h1>
-          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+          <button
+          onClick={() => {
+            setOpenModal(true);
+          }}
+          className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
             Contact Us
           </button>
         </div>
@@ -119,6 +120,13 @@ const SoftwareDevelopment = () => {
               What makes a <br />
               video great
             </h1>
+
+            <p className="text-white text-[22px]  font-[Poppins]">
+            Our dedicated editing team, including an account manager and
+              editor, handles your entire editing workload seamlessly.<br /> Plus,
+              your personalized project dashboard keeps everything organized and
+              secure in one convenient location.
+            </p>
           </div>
 
           <div className="grid grid-cols-12">
@@ -227,6 +235,58 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
 
+      <div className="px-8 xl:px-24 py-14">
+        <h1 className="services2-heading text-center mb-6 xl:mb-12 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[48px]">
+          How Does this Work?
+        </h1>
+        <div className="grid grid-cols-12">
+          <div className="col-span-12 lg:col-span-3 flex justify-center group transition-all hover:shadow-lg hover:bg-[#f69e55] items-center bg-white p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold transition-all group-hover:text-white group-hover:opacity-100 text-[22px] md:text-[26px] mb-4">
+                Step 1
+              </h1>
+              <p className="leading-normal transition-all text-[#212121] group-hover:text-white group-hover:opacity-100 opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Gather your footage and project details. Our team carefully
+                examines your content's potential.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center group items-center bg-white transition-all hover:shadow-lg hover:bg-[#f69e55] p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020]  opacity-75 font-sans font-bold transition-all group-hover:text-white group-hover:opacity-100 text-[22px] md:text-[26px] mb-4">
+                Step 2
+              </h1>
+              <p className="leading-normal text-[#212121] group-hover:text-white group-hover:opacity-100 opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                We weave magic into your footage, enhancing visuals, refining
+                audio, and building a coherent narrative.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center group items-center bg-white transition-all hover:shadow-lg hover:bg-[#f69e55] p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold transition-all group-hover:text-white group-hover:opacity-100 text-[22px] md:text-[26px] mb-4">
+                Step 3
+              </h1>
+              <p className="leading-normal text-[#212121] group-hover:text-white group-hover:opacity-100 opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Fine-tune transitions, color correction, and effects to achieve
+                a polished, professional look.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-3 flex justify-center group  items-center bg-white transition-all hover:shadow-lg hover:bg-[#f69e55] p-6 m-4">
+            <div className="px-2 md:px-6">
+              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold transition-all group-hover:text-white group-hover:opacity-100 text-[22px] md:text-[26px] mb-4">
+                Step 4
+              </h1>
+              <p className="leading-normal text-[#212121] group-hover:text-white group-hover:opacity-100 opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+                Receive your masterpiece. Our final touch ensures your video
+                shines across platforms, captivating your audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="grid bg-white py-8 grid-cols-12 px-8 md:px-24">
         <div className="col-span-12 lg:col-span-4 md:m-8">
           <div className="shadow-lg transition-all hover:scale-105 rounded-[24px]">
@@ -285,6 +345,8 @@ const SoftwareDevelopment = () => {
           </div>
         </div>
 
+        
+
         <div className="col-span-12 transition-all hover:scale-105 lg:col-span-4 md:m-8">
           <div className="shadow-lg rounded-[24px]">
             <h1 className="services2-heading text-center m-4 mb-6 text-2xl md:text-[2.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[70px]">
@@ -315,57 +377,7 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
 
-      <div className="px-8 xl:px-24 py-14">
-        <h1 className="services2-heading text-center mb-6 xl:mb-12 text-3xl md:text-[3.5rem] text-[#212121] font-[nexa] opacity-95 font-bold leading-[48px]">
-          How Does this Work?
-        </h1>
-        <div className="grid grid-cols-12">
-          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
-            <div className="px-2 md:px-6">
-              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
-                Step 1
-              </h1>
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-                Gather your footage and project details. Our team carefully
-                examines your content's potential.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
-            <div className="px-2 md:px-6">
-              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
-                Step 2
-              </h1>
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-                We weave magic into your footage, enhancing visuals, refining
-                audio, and building a coherent narrative.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
-            <div className="px-2 md:px-6">
-              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
-                Step 3
-              </h1>
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-                Fine-tune transitions, color correction, and effects to achieve
-                a polished, professional look.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-12 lg:col-span-3 flex justify-center items-center bg-white p-6 m-4">
-            <div className="px-2 md:px-6">
-              <h1 className="leading-normal text-[#f58020] opacity-75 font-sans font-bold text-[22px] md:text-[26px] mb-4">
-                Step 4
-              </h1>
-              <p className="leading-normal text-[#212121] opacity-75 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
-                Receive your masterpiece. Our final touch ensures your video
-                shines across platforms, captivating your audience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
       <div>
         <ContactSection />
         <Footer />

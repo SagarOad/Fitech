@@ -36,11 +36,12 @@ const NftDesigning = () => {
             <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
               We help brands become the foundation of the next phase of the
               internet using blockchain network technology, tokens, artist NFTs,
-              Web3, and the metaverse. <br /> We build applications and marketplaces
+              Web3, and the metaverse. <br />
+               {/* We build applications and marketplaces
               that have the capability to market, create, mint, and sell NFTs
               and other digital assets. Marketing nfts is only part of what we
               do. We connect brands and developers with artists and design
-              experiences for digital spaces, based on market research.
+              experiences for digital spaces, based on market research. */}
             </p>
           </div>
           <div className="w-full xl:w-[50%] rounded-2xl  overflow-hidden">
@@ -55,12 +56,16 @@ const NftDesigning = () => {
         </h1>
 
         <div className=" my-6 flex flex-col justify-center p-4 font-bold items-center">
-          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[30px] md:text-[32px] text-center">
+          <h1 className="leading-normal text-[#f58020] font-sans font-medium text-[24px] md:text-[26px] text-center">
             It's not our complete portfolio{" "}
             <span className=" font-extrabold"> Explore further </span>tap the
             button Below for More of Our Work
           </h1>
-          <button className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[30px] md:text-[32px]">
+          <button
+          onClick={() => {
+            setOpenModal(true);
+          }}
+          className="leading-normal ml-2 mt-4 text-white bg-[#f58020] rounded-2xl px-4 font-sans font-medium text-[22px] md:text-[26px]">
             Contact Us
           </button>
         </div>
@@ -117,7 +122,7 @@ const NftDesigning = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How do you measure success for a website?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               An exceptional NFT is born from a unique concept brought to life
               with masterful artistry. Its rarity and utility create allure,
               while its creator's story adds depth. Blockchain ensures
@@ -138,7 +143,7 @@ const NftDesigning = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How long can it be to develop website?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-0 xl:pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               The timeframe for web development depends on the website's
               complexity, design, functionalities, and the development team's
               expertise. A basic informational website may be completed in 1 to

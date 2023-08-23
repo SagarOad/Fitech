@@ -182,7 +182,7 @@ const ecommerce = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How do you measure success for social media marketing?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Success in social media marketing is gauged through key performance
               indicators (KPIs) like conversion rates, ROI, website traffic,
               CTR, engagement metrics, lead generation, search engine rankings,
@@ -199,7 +199,7 @@ const ecommerce = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               How much money does social media marketing cost?
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               The cost of social media marketing varies widely based on factors such
               as campaign scope and objectives. On average, small businesses may
               spend $500 to $2,000 per month, medium-sized businesses may
@@ -214,7 +214,7 @@ const ecommerce = () => {
             <h1 className="main-banner-heading relative mt-4 mb-6 md:text-[24px] text-[#212121] font-[nexa] font-bold leading-tight  md:text-left">
               Results & Timelines in Social Media Marketing.
             </h1>
-            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 md:text-left">
+            <p className="leading-normal text-[#212121] opacity-75 pr-20 font-sans font-medium text-base md:text-[18px] mb-8 text-justify">
               Results from social media marketing efforts can vary. Some tactics like
               PPC and social media ads show quick results (within weeks), while
               SEO and content marketing may take longer (around 3-6 months) for

@@ -58,7 +58,7 @@ const Pricing = () => {
                   Buy Now
                 </button>
               </div>
-              <div class="bg-white border-2 mb-6 md:mb-0 rounded-[25px] border-[#f58020]  transition-all hover:opacity-100 transform scale-105 py-12 md:py-6 px-4 w-full shadow-lg">
+              <div class="bg-white z-20 border-2 mb-6 md:mb-0 rounded-[25px] border-[#f58020]  transition-all hover:opacity-100 transform scale-105 py-12 md:py-6 px-4 w-full shadow-lg">
                 <h1 class="text-[#f58020] font-semibold text-center text-xl">SMM</h1>
                 <div class="text-center py-4 px-4">
                   <h1 class="text-[#f58020] w-[200px] text-3xl font-black">$599</h1>
@@ -92,7 +92,7 @@ const Pricing = () => {
                 <h1 class="text-[#212121] text-center font-semibold text-xl ">
                   ASO
                 </h1>
-                <div class="text-center py-4 px-4">S
+                <div class="text-center py-4 px-4">
                   <h1 class="text-[#212121] w-[200px] text-3xl font-black">$1200</h1>
                   <p class="text-[#212121]  mt-2">Monthly</p>
                 </div>
