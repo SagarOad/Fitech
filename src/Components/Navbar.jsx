@@ -38,15 +38,7 @@ const Navbar = () => {
                 <li className="py-2 pl-[2rem] md:py-0 md:border-0 border-t-2 border-white text-end">
                   <div className="group relative cursor-pointer">
                     <div>
-                    <NavLink to="/"
-                     onClick={(event) => {
-                      event.preventDefault(); // Prevent default link behavior
-                      const servicesSection = document.getElementById('services');
-                      if (servicesSection) {
-                        servicesSection.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    >
+                    <NavLink>
                       <a
                         data-dropdown-toggle="dropdownHover"
                         data-dropdown-trigger="hover"
@@ -103,22 +95,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                  <a
-                    href="#projects"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                  <a
-                    href="#pricing"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
-                  >
-                    Prices
-                  </a>
-                </li>
+             
                 <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
                   <NavLink to="/about">
                     <a
@@ -128,14 +105,6 @@ const Navbar = () => {
                       About
                     </a>
                   </NavLink>
-                </li>
-                <li className="pl-[2rem] py-2 md:py-0 md:border-0 border-t-2 border-white text-end">
-                  <a
-                    href="#contact"
-                    className="text-[#212121] hover:text-[#f58020] font-sans font-medium text-[18px] md:text-[19px]"
-                  >
-                    Contact
-                  </a>
                 </li>
               </ul>
             </div>
