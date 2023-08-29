@@ -2,6 +2,8 @@ import Logo from ".././assets/fame-itech-png.png";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { TbLocation } from 'react-icons/tb';
+import { FiPhone } from 'react-icons/fi';
 
 const Footer = () => {
   return (
@@ -55,7 +57,20 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+              <div className=" flex items-center mt-4">
+              <TbLocation className=" text-[#f58020] mr-4 font-bold text-[24px]" />
+              <p className="text-[#212121] mx-2 font-sans font-medium text-[18px] md:text-[18px]s">
+              1007 N Orange St. 4th Floor Ste 1382, Wilmington, Delaware,United States
+              </p>
+              </div>
+
+              <div className=" flex items-center mt-4">
+              <FiPhone className=" text-[#f58020] mr-4 text-[24px]" />
+              <p className="text-[#212121] mx-2 font-sans font-medium text-[18px] md:text-[18px]s">
+              (302) 501-7152
+              </p>
+              </div>
+            </div>    
 
             <div className="flex justify-center mt-10 items-center">
               <div className="py-8 mx-auto tracking-[1px] ml-3 text-[14px] text-[#212121] font-bold font-[nexa-light]">
@@ -70,7 +85,10 @@ const Footer = () => {
                   <FaFacebookF className="text-[#6d6d6d] mx-2 text-[26px]" />
                 </a>
               </div>
+
+              
             </div>
+            
             <hr className="w-full bg-[#f58020] opacity-40 h-[3px]" />
           </div>
         </div>
